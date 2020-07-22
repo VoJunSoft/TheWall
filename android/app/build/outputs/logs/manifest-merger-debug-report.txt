@@ -9,6 +9,7 @@ MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/junglesoft/.gradle/cach
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/73c843f534fcb42eae9a9539c6c8a817/flipper-network-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7f9c9329b99af42079a512b3d3faecfc/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/21b5c7d8609d87442eca115deb4f2285/firebase-analytics-17.4.3/AndroidManifest.xml:2:1-9:12
@@ -77,7 +78,6 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/junglesoft/.gradle/ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4d3b0a99d73d247a206852b7593b8adc/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/1aa536bf9a9648b219308d8c38a43131/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f9d80aaf0d1387bff29cb52e2e86d85a/protolite-well-known-types-17.1.0/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4296f947f6e3988a6557b5deefacb3f0/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/487de1404d093b18796fe182b9b4dd9a/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/fb2ff63baeb370f97d8977579446c5de/ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
@@ -239,6 +239,8 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesof
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7f9c9329b99af42079a512b3d3faecfc/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:5:5-44
@@ -375,8 +377,6 @@ MERGED from [androidx.print:print:1.0.0] /Users/junglesoft/.gradle/caches/transf
 MERGED from [androidx.print:print:1.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/1aa536bf9a9648b219308d8c38a43131/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f9d80aaf0d1387bff29cb52e2e86d85a/protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f9d80aaf0d1387bff29cb52e2e86d85a/protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4296f947f6e3988a6557b5deefacb3f0/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4296f947f6e3988a6557b5deefacb3f0/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/487de1404d093b18796fe182b9b4dd9a/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41

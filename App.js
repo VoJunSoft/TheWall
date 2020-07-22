@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import SignIn from './screens/signIn'
+
 const App = () => {
   return (
     <SignIn />
