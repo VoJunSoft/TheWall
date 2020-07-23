@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "C:\\Users\\Hashem Abed Al Jawad\\Documents\\TheWall\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hu\\values-hu.xml",
             "map": [
                 {
-                    "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ce6ed23d8541abd738a71df711c92e65/appcompat-1.1.0/res/values-hu/values-hu.xml",
+                    "source": "C:\\Users\\Hashem Abed Al Jawad\\.gradle\\caches\\transforms-2\\files-2.1\\ce6ed23d8541abd738a71df711c92e65\\appcompat-1.1.0\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/492a9faf243ce22d4f8e5d44237ba973/core-1.1.0/res/values-hu/values-hu.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5859",
-                        "endColumns": "100",
-                        "endOffsets": "5955"
-                    }
-                },
-                {
-                    "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/res/values-hu/values.xml",
+                    "source": "C:\\Users\\Hashem Abed Al Jawad\\.gradle\\caches\\transforms-2\\files-2.1\\775e1b422ca15942b0e3d1d81f703709\\play-services-base-17.1.0\\res\\values-hu\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/res/values-hu/values.xml",
+                    "source": "C:\\Users\\Hashem Abed Al Jawad\\.gradle\\caches\\transforms-2\\files-2.1\\5b85b53e960cb1939d1889edc915620b\\jetified-play-services-basement-17.0.0\\res\\values-hu\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,6 +52,23 @@
                         "startOffsets": "4097",
                         "endColumns": "235",
                         "endOffsets": "4328"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hashem Abed Al Jawad\\.gradle\\caches\\transforms-2\\files-2.1\\492a9faf243ce22d4f8e5d44237ba973\\core-1.1.0\\res\\values-hu\\values-hu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5859",
+                        "endColumns": "100",
+                        "endOffsets": "5955"
                     }
                 }
             ]

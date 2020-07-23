@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   SafeAreaView,
   StyleSheet,
@@ -6,36 +6,57 @@ import {
   View,
   Text,
   StatusBar,
-} from 'react-native';
+  Image,
+} from "react-native";
 import {
   Header,
   LearnMoreLinks,
   Colors,
   DebugInstructions,
   ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
+} from "react-native/Libraries/NewAppScreen";
 
 const signIn = () => {
-  return(
-    <View>
-              <Text style={styles.title}>The Wall</Text>
-    </View>
-  )
-}
+  return (
+    <View style={styles.screen}>
+      <View style={styles.imgContainer}>
+        <Image style={styles.logo} source={require("../design/wall.png")} />
+      </View>
 
+      <View style={styles.headerContainer}>
+        <Text style={styles.header}>Login</Text>
+      </View>
+
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    title: {
-      fontSize: 24,
-      fontWeight: '600',
-      color: Colors.red,
-      fontSize: 100,
-      fontWeight: '600',
-      padding: 4,
-      paddingRight: 12,
-      textAlign: 'center',
-    }
+  screen: {
+    flex: 1,
+    backgroundColor: "#d3d3d3",
+  },
+  imgContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 50,
+  },
 
-  });
+  logo: {
+    width: 150,
+    height: 150,
+    borderRadius: 50,
+  },
+
+  headerContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 5,
+  },
+
+  header: {
+    fontWeight: "bold",
+    fontSize: 25,
+  },
+});
 export default signIn;

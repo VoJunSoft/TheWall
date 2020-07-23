@@ -96,8 +96,6 @@ com/facebook/fresco/stetho/R.java
  com.facebook.fresco.stetho.R$string
  com.facebook.fresco.stetho.R$style
  com.facebook.fresco.stetho.R$styleable
-firebase/com/protolitewrapper/R.java
- firebase.com.protolitewrapper.R
 com/facebook/drawee/backends/pipeline/R.java
  com.facebook.drawee.backends.pipeline.R
  com.facebook.drawee.backends.pipeline.R$attr
@@ -110,6 +108,8 @@ com/facebook/drawee/backends/pipeline/R.java
  com.facebook.drawee.backends.pipeline.R$string
  com.facebook.drawee.backends.pipeline.R$style
  com.facebook.drawee.backends.pipeline.R$styleable
+firebase/com/protolitewrapper/R.java
+ firebase.com.protolitewrapper.R
 androidx/arch/core/R.java
  androidx.arch.core.R
 com/wall/MainActivity.java
@@ -183,18 +183,6 @@ com/google/firebase/firestore/R.java
  com.google.firebase.firestore.R$string
  com.google.firebase.firestore.R$style
  com.google.firebase.firestore.R$styleable
-com/google/firebase/R.java
- com.google.firebase.R
- com.google.firebase.R$attr
- com.google.firebase.R$color
- com.google.firebase.R$dimen
- com.google.firebase.R$drawable
- com.google.firebase.R$id
- com.google.firebase.R$integer
- com.google.firebase.R$layout
- com.google.firebase.R$string
- com.google.firebase.R$style
- com.google.firebase.R$styleable
 com/facebook/flipper/plugins/fresco/R.java
  com.facebook.flipper.plugins.fresco.R
  com.facebook.flipper.plugins.fresco.R$anim
@@ -210,6 +198,18 @@ com/facebook/flipper/plugins/fresco/R.java
  com.facebook.flipper.plugins.fresco.R$string
  com.facebook.flipper.plugins.fresco.R$style
  com.facebook.flipper.plugins.fresco.R$styleable
+com/google/firebase/R.java
+ com.google.firebase.R
+ com.google.firebase.R$attr
+ com.google.firebase.R$color
+ com.google.firebase.R$dimen
+ com.google.firebase.R$drawable
+ com.google.firebase.R$id
+ com.google.firebase.R$integer
+ com.google.firebase.R$layout
+ com.google.firebase.R$string
+ com.google.firebase.R$style
+ com.google.firebase.R$styleable
 androidx/interpolator/R.java
  androidx.interpolator.R
 androidx/core/R.java
@@ -340,8 +340,6 @@ com/facebook/imagepipeline/nativecode/R.java
  com.facebook.imagepipeline.nativecode.R$string
  com.facebook.imagepipeline.nativecode.R$style
  com.facebook.imagepipeline.nativecode.R$styleable
-androidx/lifecycle/livedata/R.java
- androidx.lifecycle.livedata.R
 androidx/appcompat/R.java
  androidx.appcompat.R
  androidx.appcompat.R$anim
@@ -357,6 +355,8 @@ androidx/appcompat/R.java
  androidx.appcompat.R$string
  androidx.appcompat.R$style
  androidx.appcompat.R$styleable
+androidx/lifecycle/livedata/R.java
+ androidx.lifecycle.livedata.R
 com/wall/ReactNativeFlipper.java
  com.wall.ReactNativeFlipper
  com.wall.ReactNativeFlipper$1
@@ -454,8 +454,6 @@ com/facebook/fresco/flipper/R.java
  com.facebook.fresco.flipper.R$string
  com.facebook.fresco.flipper.R$style
  com.facebook.fresco.flipper.R$styleable
-com/google/firebase/components/R.java
- com.google.firebase.components.R
 com/facebook/flipper/plugins/network/R.java
  com.facebook.flipper.plugins.network.R
  com.facebook.flipper.plugins.network.R$anim
@@ -471,6 +469,8 @@ com/facebook/flipper/plugins/network/R.java
  com.facebook.flipper.plugins.network.R$string
  com.facebook.flipper.plugins.network.R$style
  com.facebook.flipper.plugins.network.R$styleable
+com/google/firebase/components/R.java
+ com.google.firebase.components.R
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList
 com/facebook/fresco/ui/common/R.java
