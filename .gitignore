@@ -52,7 +52,6 @@ buck-out
 local.properties
 *.iml
 /android/
-android/.gradle
 
 # Node
 node_modules
