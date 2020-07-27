@@ -14,194 +14,193 @@
 12    <uses-permission android:name="android.permission.INTERNET" />
 12-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:4:5-67
 12-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:4:22-64
-13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 13-->[com.facebook.flipper:flipper:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/85df433c385cc40dd2c6efe9ec8d2ef5/flipper-0.37.0/AndroidManifest.xml:16:5-76
 13-->[com.facebook.flipper:flipper:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/85df433c385cc40dd2c6efe9ec8d2ef5/flipper-0.37.0/AndroidManifest.xml:16:22-73
-14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->[:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+14-->[:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-firestore:21.5.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ddab104a42618f5f31dd09e0d6bbb7af/jetified-firebase-firestore-21.5.0/AndroidManifest.xml:13:5-79
-15-->[com.google.firebase:firebase-firestore:21.5.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ddab104a42618f5f31dd09e0d6bbb7af/jetified-firebase-firestore-21.5.0/AndroidManifest.xml:13:22-76
-16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:25:5-68
-16-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:25:22-65
-17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-17-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:26:5-110
-17-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:26:22-107
-18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-18-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:26:5-82
-18-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:26:22-79
-19
-20    <application
-20-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-26:19
-21        android:name="com.wall.MainApplication"
-21-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:7:7-38
-22        android:allowBackup="false"
-22-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:11:7-34
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/492a9faf243ce22d4f8e5d44237ba973/core-1.1.0/AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:icon="@mipmap/ic_launcher"
-25-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:9:7-41
-26        android:label="@string/app_name"
-26-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:8:7-39
-27        android:roundIcon="@mipmap/ic_launcher_round"
-27-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:10:7-52
-28        android:theme="@style/AppTheme"
-28-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:12:7-38
-29        android:usesCleartextTraffic="true" >
-29-->/Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml:7:18-53
-30        <activity
-30-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:13:7-24:18
-31            android:name="com.wall.MainActivity"
-31-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:14:9-37
-32            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-32-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:16:9-86
-33            android:label="@string/app_name"
-33-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:15:9-41
-34            android:launchMode="singleTask"
-34-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:17:9-40
-35            android:windowSoftInputMode="adjustResize" >
-35-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:18:9-51
-36            <intent-filter>
-36-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:19:9-22:25
-37                <action android:name="android.intent.action.MAIN" />
-37-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:20:13-65
-37-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:20:21-62
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:21:13-73
-39-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:21:23-70
-40            </intent-filter>
-41        </activity>
-42        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-42-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:7-84
-42-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:17-81
-43        <activity
-43-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
-44            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-44-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:25:13-85
-45            android:excludeFromRecents="true"
-45-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:26:13-46
-46            android:exported="true"
-46-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:27:13-36
-47            android:launchMode="singleTask"
-47-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:28:13-44
-48            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-48-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:29:13-102
-49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-49-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:30:13-72
-50
-51        <service
-51-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:33:9-39:19
-52            android:name="com.google.firebase.components.ComponentDiscoveryService"
-52-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:34:13-84
-53            android:directBootAware="true"
-53-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-54            android:exported="false" >
-54-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:35:13-37
-55            <meta-data
-55-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:36:13-38:85
-56                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-56-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:37:17-109
-57                android:value="com.google.firebase.components.ComponentRegistrar" />
-57-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:38:17-82
-58            <meta-data
-58-->[com.google.firebase:firebase-firestore:21.5.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ddab104a42618f5f31dd09e0d6bbb7af/jetified-firebase-firestore-21.5.0/AndroidManifest.xml:20:13-22:85
-59                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-59-->[com.google.firebase:firebase-firestore:21.5.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ddab104a42618f5f31dd09e0d6bbb7af/jetified-firebase-firestore-21.5.0/AndroidManifest.xml:21:17-111
-60                android:value="com.google.firebase.components.ComponentRegistrar" />
-60-->[com.google.firebase:firebase-firestore:21.5.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ddab104a42618f5f31dd09e0d6bbb7af/jetified-firebase-firestore-21.5.0/AndroidManifest.xml:22:17-82
-61            <meta-data
-61-->[com.google.android.gms:play-services-measurement-api:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/6b28295d411bfd7b8540fde3a2a28f68/play-services-measurement-api-17.4.3/AndroidManifest.xml:30:13-32:85
-62                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-62-->[com.google.android.gms:play-services-measurement-api:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/6b28295d411bfd7b8540fde3a2a28f68/play-services-measurement-api-17.4.3/AndroidManifest.xml:31:17-139
-63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[com.google.android.gms:play-services-measurement-api:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/6b28295d411bfd7b8540fde3a2a28f68/play-services-measurement-api-17.4.3/AndroidManifest.xml:32:17-82
-64            <meta-data
-64-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:32:13-34:85
-65                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-65-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:33:17-96
-66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:34:17-82
-67            <meta-data
-67-->[com.google.firebase:firebase-installations:16.2.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/46d9b0c487a51076cfa0a002971ee21a/firebase-installations-16.2.1/AndroidManifest.xml:17:13-19:85
-68                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-68-->[com.google.firebase:firebase-installations:16.2.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/46d9b0c487a51076cfa0a002971ee21a/firebase-installations-16.2.1/AndroidManifest.xml:18:17-127
-69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[com.google.firebase:firebase-installations:16.2.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/46d9b0c487a51076cfa0a002971ee21a/firebase-installations-16.2.1/AndroidManifest.xml:19:17-82
-70        </service>
-71
-72        <receiver
-72-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:29:9-33:20
-73            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-73-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:30:13-85
-74            android:enabled="true"
-74-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:31:13-35
-75            android:exported="false" >
-75-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:32:13-37
-76        </receiver>
-77
-78        <service
-78-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:35:9-38:40
-79            android:name="com.google.android.gms.measurement.AppMeasurementService"
-79-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:36:13-84
-80            android:enabled="true"
-80-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:37:13-35
-81            android:exported="false" />
-81-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:38:13-37
-82        <service
-82-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:39:9-43:72
-83            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-83-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:40:13-87
-84            android:enabled="true"
-84-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:41:13-35
-85            android:exported="false"
-85-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:42:13-37
-86            android:permission="android.permission.BIND_JOB_SERVICE" />
-86-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:43:13-69
-87
-88        <receiver
-88-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:37:9-44:20
-89            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-89-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:38:13-78
-90            android:exported="true"
-90-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:39:13-36
-91            android:permission="com.google.android.c2dm.permission.SEND" >
-91-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:40:13-73
-92            <intent-filter>
-92-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:41:13-43:29
-93                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-93-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:42:17-81
-93-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:42:25-78
-94            </intent-filter>
-95        </receiver>
-96
-97        <activity
-97-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-101
-102        <provider
-102-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-103            android:name="com.google.firebase.provider.FirebaseInitProvider"
-103-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-104            android:authorities="com.wall.firebaseinitprovider"
-104-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-105            android:exported="false"
-105-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-106            android:initOrder="100" />
-106-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-107
-108        <meta-data
-108-->[com.google.android.gms:play-services-basement:17.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-109            android:name="com.google.android.gms.version"
-109-->[com.google.android.gms:play-services-basement:17.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-110            android:value="@integer/google_play_services_version" />
-110-->[com.google.android.gms:play-services-basement:17.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-111    </application>
-112
-113</manifest>
+15-->[:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+15-->[:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:26:22-107
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:26:22-79
+18
+19    <application
+19-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-26:19
+20        android:name="com.wall.MainApplication"
+20-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:7:7-38
+21        android:allowBackup="false"
+21-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:11:7-34
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/492a9faf243ce22d4f8e5d44237ba973/core-1.1.0/AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:9:7-41
+25        android:label="@string/app_name"
+25-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:8:7-39
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:10:7-52
+27        android:theme="@style/AppTheme"
+27-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:12:7-38
+28        android:usesCleartextTraffic="true" >
+28-->/Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml:7:18-53
+29        <activity
+29-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:13:7-24:18
+30            android:name="com.wall.MainActivity"
+30-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:14:9-37
+31            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+31-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:16:9-86
+32            android:label="@string/app_name"
+32-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:15:9-41
+33            android:launchMode="singleTask"
+33-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:17:9-40
+34            android:windowSoftInputMode="adjustResize" >
+34-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:18:9-51
+35            <intent-filter>
+35-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:19:9-22:25
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:20:13-65
+36-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:20:21-62
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:21:13-73
+38-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:21:23-70
+39            </intent-filter>
+40        </activity>
+41        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+41-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:7-84
+41-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:17-81
+42        <activity
+42-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:24:9-31:50
+43            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+43-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:25:13-85
+44            android:excludeFromRecents="true"
+44-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:26:13-46
+45            android:exported="true"
+45-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:27:13-36
+46            android:launchMode="singleTask"
+46-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:28:13-44
+47            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+47-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:29:13-102
+48            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+48-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:30:13-72
+49
+50        <service
+50-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:33:9-39:19
+51            android:name="com.google.firebase.components.ComponentDiscoveryService"
+51-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:34:13-84
+52            android:directBootAware="true"
+52-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+53            android:exported="false" >
+53-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:35:13-37
+54            <meta-data
+54-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:36:13-38:85
+55                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+55-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:37:17-109
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.firebase:firebase-auth:19.3.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0c466e7b9fbb45d041081e6126a7b567/firebase-auth-19.3.1/AndroidManifest.xml:38:17-82
+57            <meta-data
+57-->[com.google.firebase:firebase-firestore:21.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/fd45996ec13a40139c4591846e5f65cd/jetified-firebase-firestore-21.4.3/AndroidManifest.xml:20:13-22:85
+58                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+58-->[com.google.firebase:firebase-firestore:21.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/fd45996ec13a40139c4591846e5f65cd/jetified-firebase-firestore-21.4.3/AndroidManifest.xml:21:17-111
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-firestore:21.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/fd45996ec13a40139c4591846e5f65cd/jetified-firebase-firestore-21.4.3/AndroidManifest.xml:22:17-82
+60            <meta-data
+60-->[com.google.android.gms:play-services-measurement-api:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/6b28295d411bfd7b8540fde3a2a28f68/play-services-measurement-api-17.4.3/AndroidManifest.xml:30:13-32:85
+61                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+61-->[com.google.android.gms:play-services-measurement-api:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/6b28295d411bfd7b8540fde3a2a28f68/play-services-measurement-api-17.4.3/AndroidManifest.xml:31:17-139
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.android.gms:play-services-measurement-api:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/6b28295d411bfd7b8540fde3a2a28f68/play-services-measurement-api-17.4.3/AndroidManifest.xml:32:17-82
+63            <meta-data
+63-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:32:13-34:85
+64                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+64-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:33:17-96
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:34:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-installations:16.2.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/46d9b0c487a51076cfa0a002971ee21a/firebase-installations-16.2.1/AndroidManifest.xml:17:13-19:85
+67                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+67-->[com.google.firebase:firebase-installations:16.2.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/46d9b0c487a51076cfa0a002971ee21a/firebase-installations-16.2.1/AndroidManifest.xml:18:17-127
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-installations:16.2.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/46d9b0c487a51076cfa0a002971ee21a/firebase-installations-16.2.1/AndroidManifest.xml:19:17-82
+69        </service>
+70
+71        <receiver
+71-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:29:9-33:20
+72            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+72-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:30:13-85
+73            android:enabled="true"
+73-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:31:13-35
+74            android:exported="false" >
+74-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:32:13-37
+75        </receiver>
+76
+77        <service
+77-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:35:9-38:40
+78            android:name="com.google.android.gms.measurement.AppMeasurementService"
+78-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:36:13-84
+79            android:enabled="true"
+79-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:37:13-35
+80            android:exported="false" />
+80-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:38:13-37
+81        <service
+81-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:39:9-43:72
+82            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+82-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:40:13-87
+83            android:enabled="true"
+83-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:41:13-35
+84            android:exported="false"
+84-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:42:13-37
+85            android:permission="android.permission.BIND_JOB_SERVICE" />
+85-->[com.google.android.gms:play-services-measurement:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/4995c0b52508e4f20d76df8dd41fa65f/play-services-measurement-17.4.3/AndroidManifest.xml:43:13-69
+86
+87        <receiver
+87-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:37:9-44:20
+88            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+88-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:38:13-78
+89            android:exported="true"
+89-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:39:13-36
+90            android:permission="com.google.android.c2dm.permission.SEND" >
+90-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:40:13-73
+91            <intent-filter>
+91-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:41:13-43:29
+92                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+92-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:42:17-81
+92-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:42:25-78
+93            </intent-filter>
+94        </receiver>
+95
+96        <activity
+96-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+97-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-base:17.1.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+100
+101        <provider
+101-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+102            android:name="com.google.firebase.provider.FirebaseInitProvider"
+102-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+103            android:authorities="com.wall.firebaseinitprovider"
+103-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+104            android:exported="false"
+104-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+105            android:initOrder="100" />
+105-->[com.google.firebase:firebase-common:19.3.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/275dcd0b6577e79c25f4e69fe22707f3/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+106
+107        <meta-data
+107-->[com.google.android.gms:play-services-basement:17.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+108            android:name="com.google.android.gms.version"
+108-->[com.google.android.gms:play-services-basement:17.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+109            android:value="@integer/google_play_services_version" />
+109-->[com.google.android.gms:play-services-basement:17.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/be8999cf4dcc8ce1d8c9df84208a5fb4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+110    </application>
+111
+112</manifest>

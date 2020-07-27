@@ -18,6 +18,7 @@ import {
 import SignIn from './screens/signIn'
 import Wall from './screens/wall'
 
+
 const App = () => {
   return (        
    <Wall />
