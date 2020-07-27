@@ -23,29 +23,30 @@ const wall = () => {
   const [input, setInput] = useState('')
 
   //TO DO: Load state from posts database
+  // Use post id as key for the list
   const [posts, setPosts] = useState([
     { 
-      userid: 12345, 
+      userid: '12345', 
       body: 'My first writting on the wall',
       date: Date()
     },{
-      userid: 12346, 
+      userid: '12346', 
       body: 'Bricks Bricks Bricks, Stick with STicks However then never end up left or right',
       date: Date()
     },{
-      userid: 12347, 
+      userid: '12347', 
       body: 'My first writting on the wall',
       date: Date() 
     },{
-      userid: 12348, 
+      userid: '12348', 
       body: 'My first writting on the wall',
       date: Date() 
     },{
-      userid: 12349, 
+      userid: '12349', 
       body: 'My first writting on the wall',
       date: Date() 
     },{
-      userid: 12342, 
+      userid: '12342', 
       body: 'My first writting on the wall',
       date: Date() 
     }
@@ -58,15 +59,16 @@ const wall = () => {
       ...prevState,
       {userid: 6, body: input, date: Date()}
     ]})
-
+    setInput("")
     //TO DO: ENTER DATA TO DATABASE
   }
 
   return(
-    <View>
+    <View style={styles.container}>
       <HeaderMenu />
       <ScrollView>
          <TextInput
+            value={input}
             style={styles.postInput}
             onChangeText={text=> setInput(text)}
             multiline={true}
@@ -91,6 +93,9 @@ const wall = () => {
 }
 
 const styles = StyleSheet.create({
+  container:{
+    flex:1,
+  },
     postInput: {
       flex:1,
       fontSize: 24,

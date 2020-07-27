@@ -64,30 +64,30 @@ const allPosts = (props) => {
     </View>
     )}
   />
-  /* {
-  posts.map(post => 
-    <View style={styles.posts} key={post.userid}>
-      <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
-       <View style={styles.postsHeader}>
-        <Icon
-          reverse
-          name='user'
-          type='font-awesome'
-          size={10}
-          color='#42435b'
-          onPress={() => console.log('hello')} />
-        <Text style={styles.user}>{post.userid}</Text>
-      </View>
+  
+//   props.posts.map(post => 
+//     <View style={styles.posts} key={post.userid}>
+//       <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
+//        <View style={styles.postsHeader}>
+//         <Icon
+//           reverse
+//           name='user'
+//           type='font-awesome'
+//           size={10}
+//           color='#42435b'
+//           onPress={() => console.log('hello')} />
+//         <Text style={styles.user}>{post.userid}</Text>
+//       </View>
 
-      <Text style={styles.body}>{post.body}</Text>
+//       <Text style={styles.body}>{post.body}</Text>
 
-      <View style={styles.dateTime}>
-        <Text style={styles.date}>{handleDate(post.date)}</Text>
-        <Text style={styles.date}>{handleTime(post.date)}</Text>
-      </View>
-      </ImageBackground>
-    </View>
-  )} */
+//       <View style={styles.dateTime}>
+//         <Text style={styles.date}>{handleDate(post.date)}</Text>
+//         <Text style={styles.date}>{handleTime(post.date)}</Text>
+//       </View>
+//       </ImageBackground>
+//     </View>
+//   )
   )
 }
 
