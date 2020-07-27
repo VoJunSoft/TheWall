@@ -32,7 +32,7 @@
 18-->[com.google.firebase:firebase-iid:20.1.5] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/dd11fafb24af4414146706031e643061/firebase-iid-20.1.5/AndroidManifest.xml:26:22-79
 19
 20    <application
-20-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-25:19
+20-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-26:19
 21        android:name="com.wall.MainApplication"
 21-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:7:7-38
 22        android:allowBackup="false"
@@ -51,7 +51,7 @@
 29        android:usesCleartextTraffic="true" >
 29-->/Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml:7:18-53
 30        <activity
-30-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:13:7-23:18
+30-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:13:7-24:18
 31            android:name="com.wall.MainActivity"
 31-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:14:9-37
 32            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
@@ -74,8 +74,8 @@
 40            </intent-filter>
 41        </activity>
 42        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-42-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:24:7-84
-42-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:24:17-81
+42-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:7-84
+42-->/Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:17-81
 43        <activity
 43-->[com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
 44            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

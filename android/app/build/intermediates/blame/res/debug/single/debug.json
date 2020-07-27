@@ -85,7 +85,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_up.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/anim/catalyst_slide_up.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/anim/catalyst_slide_up.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -109,7 +109,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_fps_view.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/layout/fps_view.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/layout/fps_view.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -221,7 +221,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/layout/redbox_view.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/layout/redbox_view.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -341,7 +341,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_redbox_item_title.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/layout/redbox_item_title.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/layout/redbox_item_title.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
@@ -353,7 +353,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_out.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/anim/catalyst_fade_out.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/anim/catalyst_fade_out.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -469,7 +469,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_in.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/anim/catalyst_push_up_in.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -485,7 +485,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable_redbox_top_border_background.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/drawable/redbox_top_border_background.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/drawable/redbox_top_border_background.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -553,7 +553,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_down.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/anim/catalyst_slide_down.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_search_api_material.xml.flat",
@@ -1037,7 +1037,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/xml_rn_dev_preferences.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/xml/rn_dev_preferences.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/xml/rn_dev_preferences.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
@@ -1313,7 +1313,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_redbox_item_frame.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/layout/redbox_item_frame.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/color-v21_abc_btn_colored_borderless_text_material.xml.flat",
@@ -1509,7 +1509,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_in.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/anim/catalyst_fade_in.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
@@ -1613,7 +1613,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_dev_loading_view.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/layout/dev_loading_view.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/layout/dev_loading_view.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1825,7 +1825,7 @@
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_out.xml.flat",
-        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/res/anim/catalyst_push_up_out.xml"
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",

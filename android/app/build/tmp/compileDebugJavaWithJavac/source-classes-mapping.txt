@@ -1,6 +1,5 @@
-com/wall/MainApplication.java
- com.wall.MainApplication
- com.wall.MainApplication$1
+com/google/android/gms/ads_identifier/R.java
+ com.google.android.gms.ads_identifier.R
 com/facebook/fbcore/R.java
  com.facebook.fbcore.R
 androidx/print/R.java
@@ -246,6 +245,21 @@ androidx/activity/R.java
  androidx.activity.R$styleable
 com/google/firebase/firebase_analytics/R.java
  com.google.firebase.firebase_analytics.R
+com/oblador/vectoricons/R.java
+ com.oblador.vectoricons.R
+ com.oblador.vectoricons.R$anim
+ com.oblador.vectoricons.R$attr
+ com.oblador.vectoricons.R$bool
+ com.oblador.vectoricons.R$color
+ com.oblador.vectoricons.R$dimen
+ com.oblador.vectoricons.R$drawable
+ com.oblador.vectoricons.R$id
+ com.oblador.vectoricons.R$integer
+ com.oblador.vectoricons.R$layout
+ com.oblador.vectoricons.R$string
+ com.oblador.vectoricons.R$style
+ com.oblador.vectoricons.R$styleable
+ com.oblador.vectoricons.R$xml
 com/google/android/gms/base/R.java
  com.google.android.gms.base.R
  com.google.android.gms.base.R$attr
@@ -553,5 +567,6 @@ androidx/vectordrawable/animated/R.java
  androidx.vectordrawable.animated.R$string
  androidx.vectordrawable.animated.R$style
  androidx.vectordrawable.animated.R$styleable
-com/google/android/gms/ads_identifier/R.java
- com.google.android.gms.ads_identifier.R
+com/wall/MainApplication.java
+ com.wall.MainApplication
+ com.wall.MainApplication$1

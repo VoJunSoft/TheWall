@@ -1,16 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
-MERGED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
+ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
 MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/85df433c385cc40dd2c6efe9ec8d2ef5/flipper-0.37.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/73c843f534fcb42eae9a9539c6c8a817/flipper-network-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7f9c9329b99af42079a512b3d3faecfc/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-vector-icons] /Users/junglesoft/Downloads/TheWall/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/21b5c7d8609d87442eca115deb4f2285/firebase-analytics-17.4.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/b270d53979cece891d4ae8d4cecdec48/firebase-auth-19.3.2/AndroidManifest.xml:17:1-42:12
@@ -91,13 +92,13 @@ INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidM
 		INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
 		INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:1-28:12
 		INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -122,11 +123,11 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.3] /U
 	android:name
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-25:19
-MERGED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-25:19
-MERGED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-25:19
-MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:11:5-20
+ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/AndroidManifest.xml:11:5-20
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/21b5c7d8609d87442eca115deb4f2285/firebase-analytics-17.4.3/AndroidManifest.xml:7:5-20
@@ -202,7 +203,7 @@ MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/junglesoft/.gradle/c
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:7:7-38
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:7:7-38
 activity#com.wall.MainActivity
-ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:13:7-23:18
+ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:13:7-24:18
 	android:label
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:15:9-41
 	android:launchMode
@@ -224,9 +225,9 @@ ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManif
 	android:name
 		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:21:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:24:7-84
+ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:7-84
 	android:name
-		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:24:17-81
+		ADDED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml:25:17-81
 uses-sdk
 INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/junglesoft/Downloads/TheWall/android/app/src/main/AndroidManifest.xml
@@ -241,8 +242,10 @@ MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/nod
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.1] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/0b53919181e7ca04fb8234f5ea8d1e1e/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/junglesoft/Downloads/TheWall/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/junglesoft/Downloads/TheWall/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.2] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/547b367e319d343d6b9e9f941bb4fb79/jetified-react-native-0.63.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/bb04c40feb7ad9f83d5c2509cca54f31/firebase-core-17.4.3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/21b5c7d8609d87442eca115deb4f2285/firebase-analytics-17.4.3/AndroidManifest.xml:5:5-44

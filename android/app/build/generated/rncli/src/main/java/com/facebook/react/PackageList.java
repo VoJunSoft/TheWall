@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // @react-native-firebase/app
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 
 public class PackageList {
   private Application application;
@@ -58,7 +60,8 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
-      new ReactNativeFirebaseAppPackage()
+      new ReactNativeFirebaseAppPackage(),
+      new VectorIconsPackage()
     ));
   }
 }
