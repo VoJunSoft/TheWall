@@ -212,6 +212,21 @@ com/google/firebase/R.java
  com.google.firebase.R$styleable
 androidx/interpolator/R.java
  androidx.interpolator.R
+io/invertase/firebase/auth/R.java
+ io.invertase.firebase.auth.R
+ io.invertase.firebase.auth.R$anim
+ io.invertase.firebase.auth.R$attr
+ io.invertase.firebase.auth.R$bool
+ io.invertase.firebase.auth.R$color
+ io.invertase.firebase.auth.R$dimen
+ io.invertase.firebase.auth.R$drawable
+ io.invertase.firebase.auth.R$id
+ io.invertase.firebase.auth.R$integer
+ io.invertase.firebase.auth.R$layout
+ io.invertase.firebase.auth.R$string
+ io.invertase.firebase.auth.R$style
+ io.invertase.firebase.auth.R$styleable
+ io.invertase.firebase.auth.R$xml
 androidx/core/R.java
  androidx.core.R
  androidx.core.R$attr
@@ -254,6 +269,21 @@ com/google/android/gms/base/R.java
  com.google.android.gms.base.R$id
  com.google.android.gms.base.R$string
  com.google.android.gms.base.R$styleable
+com/oblador/vectoricons/R.java
+ com.oblador.vectoricons.R
+ com.oblador.vectoricons.R$anim
+ com.oblador.vectoricons.R$attr
+ com.oblador.vectoricons.R$bool
+ com.oblador.vectoricons.R$color
+ com.oblador.vectoricons.R$dimen
+ com.oblador.vectoricons.R$drawable
+ com.oblador.vectoricons.R$id
+ com.oblador.vectoricons.R$integer
+ com.oblador.vectoricons.R$layout
+ com.oblador.vectoricons.R$string
+ com.oblador.vectoricons.R$style
+ com.oblador.vectoricons.R$styleable
+ com.oblador.vectoricons.R$xml
 com/google/firebase/installations/R.java
  com.google.firebase.installations.R
  com.google.firebase.installations.R$attr
