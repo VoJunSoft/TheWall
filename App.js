@@ -28,11 +28,11 @@ const App = () => {
         <Stack.Screen 
             name='Wall' 
             component={Wall} 
-            options={{ headerTitle: props => <HeaderMenu {...props} /> , headerLeft: null}}/>
+            options={{ headerTitle: () => <HeaderMenu /> , headerLeft: null}}/>
         <Stack.Screen 
             name="Profile" 
             component={Profile} 
-            options={{ headerTitle: props => <HeaderMenu {...props} />, headerLeft: null}}/>
+            options={{ headerTitle: () => <HeaderMenu />, headerLeft: null}}/>
         <Stack.Screen 
             name="Settings" 
             component={Settings} 

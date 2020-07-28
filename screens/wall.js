@@ -55,11 +55,11 @@ const wall = ({navigation}) => {
   
   const handleSubmit = () => {
     //Add Input to posts state
-    //TODO: replace userid with user name 
+    //TODO: replace userid with user name and fix keyExtractor @ allPosts.js
     setPosts((prevState) => {
     return [
       ...prevState,
-      {userid: 6, body: input, date: Date()}
+      {userid: '6', body: input, date: Date()}
     ]})
     setInput("")
     //TO DO: ENTER DATA TO DATABASE
@@ -76,7 +76,6 @@ const wall = ({navigation}) => {
             numberOfLines={3}
             placeholder="Write On the Wall..."
             underlineColorAndroid='transparent'
-            require={true}
          />
         <Button 
           onPress={handleSubmit}
