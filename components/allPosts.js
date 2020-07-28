@@ -36,6 +36,7 @@ const allPosts = (props) => {
     return postTime
   }
   return(
+    //TODO: fix nested flastList issue/contradiction with scrollView
     <FlatList 
     data={props.posts}
     keyExtractor={item => item.userid}

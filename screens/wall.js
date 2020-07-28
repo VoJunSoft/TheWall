@@ -66,6 +66,7 @@ const wall = ({navigation}) => {
   }
 
   return(
+    //TODO: make TextInput a seperate component and add style to it [including a submit button]
     <View style={styles.container}>
       <ScrollView>
          <TextInput
