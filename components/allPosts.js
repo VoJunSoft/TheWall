@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
       fontSize: 24,
       color:'green',
       padding: 4,
-      margin: 10,
+      margin: 7,
       textAlign: 'center',
       backgroundColor:'lightgray'
     }

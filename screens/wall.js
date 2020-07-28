@@ -20,7 +20,6 @@ import AllPosts from '../components/allPosts'
 const wall = ({navigation}) => {
   //TODO: Check if user not logged in go to login screen
   
-  //TODO: input validation and Show/Hide TextInput
   const [input, setInput] = useState('')
 
   //TODO: Load state from posts database. HINT: Use post id as key for the list
@@ -64,11 +63,20 @@ const wall = ({navigation}) => {
     setInput("")
     //TO DO: ENTER DATA TO DATABASE
   }
-
+  const [inputVisibiliy, setInputVisibility] = useState(false)
+  const handleInput = () =>{
+    setInputVisibility(!inputVisibiliy)
+  }
   return(
-    //TODO: make TextInput a seperate component and add style to it [including a submit button]
+    //TODO: styling/replacing textInput container + validation
     <View style={styles.container}>
-      <ScrollView>
+        <Button 
+          onPress={handleInput}
+          title="Post On The Wall"
+          color="#42435b"
+        />
+        {inputVisibiliy ? 
+        <View style={styles.inputBox}>
          <TextInput
             value={input}
             style={styles.postInput}
@@ -78,17 +86,18 @@ const wall = ({navigation}) => {
             placeholder="Write On the Wall..."
             underlineColorAndroid='transparent'
          />
-        <Button 
-          onPress={handleSubmit}
-          title="Post On The Wall"
-          color="#42435b"
-        />
-
+        <Icon
+          style={styles.send}
+          reverse
+          name='send'
+          type='font-awesome'
+          size={22}
+          color='#42435b'
+          onPress={handleSubmit}/>
+         </View> : null
+        }
         {/* <Divider style={{ backgroundColor: '#42435b' }} /> */}
-
         <AllPosts posts={posts} />
-    
-      </ScrollView>
     </View>
   )
 }
@@ -99,13 +108,20 @@ const styles = StyleSheet.create({
       marginTop: 0,
     },
     postInput: {
-      flex:1,
+      flex:0,
       fontSize: 24,
       borderColor:'#42435b',
       borderWidth:1,
-      margin:10,
+      margin:7,
       fontFamily: "Outrun future",
-    }
+      backgroundColor: "white"
+    },
+    inputBox:{
+      flex:0,
+      flexDirection:'column',
+      backgroundColor: "white",
+      textAlign:"center"
+    },
   });
 
 export default wall;
