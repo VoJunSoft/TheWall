@@ -19,24 +19,26 @@ const settings = () => {
 
   return(
     <View>
-      <HeaderMenu />
       <ScrollView>
-        <Text>About Us</Text>
-        <Text>Log Out</Text>
+        <Text style={styles.title}>About Us</Text>
+        <Text style={styles.title}>Log Out</Text>
       </ScrollView>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-    postInput: {
-      flex:1,
-      fontSize: 24,
-      borderColor:'#42435b',
-      borderWidth:1,
-      margin:10,
-      fontFamily: "Outrun future",
-    }
+  title: {
+    flex:0,
+    flexDirection: "row",
+    justifyContent: 'space-between',
+    fontFamily:'Cheeky Bite Shine - AND',
+    fontSize: 37,
+    marginTop:70,
+    fontWeight: '100',
+    padding: 7,
+    textAlign: 'center',
+  }
   });
 
 export default settings;

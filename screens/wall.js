@@ -17,13 +17,13 @@ import HeaderMenu from '../components/header'
 import AllPosts from '../components/allPosts'
 //import Icon from 'react-native-vector-icons/FontAwesome';
 
-const wall = () => {
+const wall = ({navigation}) => {
+  //TODO: Check if user not logged in go to login screen
   
-  //Input state to be saved into posts database
+  //TODO: input validation and Show/Hide TextInput
   const [input, setInput] = useState('')
 
-  //TO DO: Load state from posts database
-  // Use post id as key for the list
+  //TODO: Load state from posts database. HINT: Use post id as key for the list
   const [posts, setPosts] = useState([
     { 
       userid: '12345', 
@@ -54,6 +54,8 @@ const wall = () => {
 
   
   const handleSubmit = () => {
+    //Add Input to posts state
+    //TODO: replace userid with user name 
     setPosts((prevState) => {
     return [
       ...prevState,
@@ -65,7 +67,6 @@ const wall = () => {
 
   return(
     <View style={styles.container}>
-      <HeaderMenu />
       <ScrollView>
          <TextInput
             value={input}
@@ -93,9 +94,10 @@ const wall = () => {
 }
 
 const styles = StyleSheet.create({
-  container:{
-    flex:1,
-  },
+    container:{
+      flex:1,
+      marginTop: 0,
+    },
     postInput: {
       flex:1,
       fontSize: 24,

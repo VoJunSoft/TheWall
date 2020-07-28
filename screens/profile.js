@@ -7,25 +7,27 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import HeaderMenu from '../components/header'
 
-const profile = () => {
+const profile = ({navigation}) => {
+  return(
     <View>
-              <Text style={styles.title}>profile</Text>
+            <Text style={styles.title}>profile</Text>
     </View>
 
-}
+  )}
 
 const styles = StyleSheet.create({
-    title: {
-      fontSize: 24,
-      fontWeight: '600',
-      color: Colors.purple,
-      fontSize: 12,
-      fontWeight: '600',
-      padding: 4,
-      paddingRight: 12,
-      textAlign: 'right',
-    },
-
+  title: {
+    flex:0,
+    flexDirection: "row",
+    justifyContent: 'space-between',
+    fontFamily:'Cheeky Bite Shine - AND',
+    fontSize: 37,
+    marginTop:70,
+    fontWeight: '100',
+    padding: 7,
+    textAlign: 'center',
+  }
   });
 export default profile;

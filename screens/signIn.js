@@ -212,6 +212,9 @@ const signIn = () => {
 
 
 const styles = StyleSheet.create({
+  logo:{
+    // width: 400
+  },
     title: {
       fontSize: 24,
       fontWeight: '600',

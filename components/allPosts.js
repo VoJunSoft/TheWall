@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 
 import { Button, ThemeProvider, Header, Icon } from 'react-native-elements';
-import { IconX } from 'react-native-vector-icons'
 
 const allPosts = (props) => {
   //Date format

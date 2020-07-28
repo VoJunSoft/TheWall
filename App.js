@@ -7,21 +7,38 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text } from 'react-native';
 import SignIn from './screens/signIn'
 import Wall from './screens/wall'
+import Settings from './screens/settings'
+import Profile from './screens/profile'
+import HeaderMenu from './components/header'
 
-
+const Stack = createStackNavigator();
 const App = () => {
-  return (        
-   <Wall />
+  return (  
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Wall">
+        <Stack.Screen 
+            name="SignIn" 
+            component={SignIn} />
+        <Stack.Screen 
+            name='Wall' 
+            component={Wall} 
+            options={{ headerTitle: props => <HeaderMenu {...props} /> , headerLeft: null}}/>
+        <Stack.Screen 
+            name="Profile" 
+            component={Profile} 
+            options={{ headerTitle: props => <HeaderMenu {...props} />, headerLeft: null}}/>
+        <Stack.Screen 
+            name="Settings" 
+            component={Settings} 
+            options={{ headerTitle: props => <HeaderMenu {...props} />, headerLeft: null}}/>
+      </Stack.Navigator>
+    </NavigationContainer>   
   );
 };
 
