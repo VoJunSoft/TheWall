@@ -89,6 +89,7 @@ const wall = ({navigation}) => {
             multiline={true}
             numberOfLines={3}
             maxLength={500}
+            selectionColor="orange"
             placeholderTextColor="#42435b"
             placeholder="Write On the Wall..."
             underlineColorAndroid='transparent'
