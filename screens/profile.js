@@ -8,11 +8,20 @@ import {
   StatusBar,
 } from 'react-native';
 import HeaderMenu from '../components/header'
+import { Button } from 'react-native-elements';
+
 
 const profile = ({navigation}) => {
+  const handleDelete = () =>{
+  
+  }
   return(
     <View>
             <Text style={styles.title}>profile</Text>
+
+            {/* This will display all posts in your state with the delete Button
+            TODO complete handleDelete using posts.filter
+            <AllPosts posts={posts} deleteButton={true} handleDelete={handleDelete}/> */}
     </View>
 
   )}

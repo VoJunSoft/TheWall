@@ -39,7 +39,7 @@ const allPosts = (props) => {
     //TODO: fix nested flastList issue/contradiction with scrollView
     <FlatList 
     data={props.posts}
-    keyExtractor={item => item.userid}
+    keyExtractor={item => item.id}
     renderItem={ ({item}) => (
       <View style={styles.posts}>
       <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
@@ -59,6 +59,15 @@ const allPosts = (props) => {
       <View style={styles.dateTime}>
         <Text style={styles.date}>{handleDate(item.date)}</Text>
         <Text style={styles.date}>{handleTime(item.date)}</Text>
+        { props.deleteButton ?
+        <Icon
+          reverse
+          name='trash'
+          type='font-awesome'
+          size={10}
+          color='red'
+          onPress={() => handleDelete(item.id)} /> : null
+        }
       </View>
       </ImageBackground>
     </View>
@@ -109,6 +118,7 @@ const styles = StyleSheet.create({
       flex:1,
       flexDirection:'row',
       justifyContent:'space-between',
+      alignItems:"center",
       paddingLeft:10,
       paddingRight:10,
 

@@ -25,26 +25,32 @@ const wall = ({navigation}) => {
   //TODO: Load state from posts database. HINT: Use post id as key for the list
   const [posts, setPosts] = useState([
     { 
+      id:'1',
       userid: '12345', 
       body: 'My first writting on the wall',
       date: Date()
     },{
-      userid: '12346', 
+      id:'6',
+      userid: '12347', 
       body: 'Bricks Bricks Bricks, Stick with STicks However then never end up left or right',
       date: Date()
     },{
+      id:'2',
       userid: '12347', 
       body: 'My first writting on the wall',
       date: Date() 
     },{
-      userid: '12348', 
+      id:'3',
+      userid: '12347', 
       body: 'My first writting on the wall',
       date: Date() 
     },{
+      id:'4',
       userid: '12349', 
       body: 'My first writting on the wall',
       date: Date() 
     },{
+      id:'5',
       userid: '12342', 
       body: 'My first writting on the wall',
       date: Date() 
@@ -58,11 +64,11 @@ const wall = ({navigation}) => {
       return
     }
     //Add Input to posts state
-    //TODO: replace userid with user name and fix keyExtractor @ allPosts.js
+    //TODO: replace userid with user name and get rid of id as it gets automatically generated in firbase
     setPosts((prevState) => {
     return [
       ...prevState,
-      {userid: '6', body: input, date: Date()}
+      {id:'6', userid: '6', body: input, date: Date()}
     ]})
     setInput("")
     setInputVisibility(false)
@@ -108,13 +114,14 @@ const wall = ({navigation}) => {
          </View> : null
         }
         {/* <Divider style={{ backgroundColor: '#42435b' }} /> */}
-        <AllPosts posts={posts} />
+        <AllPosts posts={posts} deleteButton={false}/>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
     container:{
+      flex:1,
       marginTop: 0,
     },
     postInput: {
