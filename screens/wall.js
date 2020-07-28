@@ -51,8 +51,12 @@ const wall = ({navigation}) => {
     }
   ])
 
-  
+  const [errMsg, setErrMsg]= useState('')
   const handleSubmit = () => {
+    if(input.length<=12){
+      setErrMsg("Your post is too short")
+      return
+    }
     //Add Input to posts state
     //TODO: replace userid with user name and fix keyExtractor @ allPosts.js
     setPosts((prevState) => {
@@ -61,6 +65,7 @@ const wall = ({navigation}) => {
       {userid: '6', body: input, date: Date()}
     ]})
     setInput("")
+    setInputVisibility(false)
     //TO DO: ENTER DATA TO DATABASE
   }
   const [inputVisibiliy, setInputVisibility] = useState(false)
@@ -83,17 +88,22 @@ const wall = ({navigation}) => {
             onChangeText={text=> setInput(text)}
             multiline={true}
             numberOfLines={3}
+            maxLength={500}
+            placeholderTextColor="#42435b"
             placeholder="Write On the Wall..."
             underlineColorAndroid='transparent'
          />
-        <Icon
-          style={styles.send}
-          reverse
-          name='send'
-          type='font-awesome'
-          size={22}
-          color='#42435b'
-          onPress={handleSubmit}/>
+         <View style={styles.subBox}>
+          <Text style={styles.err}>{errMsg}</Text>
+            <Icon
+              style={styles.send}
+              reverse
+              name='send'
+              type='font-awesome'
+              size={22}
+              color='#42435b'
+              onPress={handleSubmit}/>
+              </View>
          </View> : null
         }
         {/* <Divider style={{ backgroundColor: '#42435b' }} /> */}
@@ -104,11 +114,9 @@ const wall = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container:{
-      flex:1,
       marginTop: 0,
     },
     postInput: {
-      flex:0,
       fontSize: 24,
       borderColor:'#42435b',
       borderWidth:1,
@@ -117,11 +125,19 @@ const styles = StyleSheet.create({
       backgroundColor: "white"
     },
     inputBox:{
-      flex:0,
-      flexDirection:'column',
       backgroundColor: "white",
       textAlign:"center"
     },
+    subBox:{
+      flex:0,
+      flexDirection:'row',
+      justifyContent:'space-around',
+      alignItems:'center'
+    },
+    err:{
+      color:'red',
+      textAlign:'center'
+    }
   });
 
 export default wall;
