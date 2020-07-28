@@ -12,9 +12,10 @@ import { Button } from 'react-native-elements';
 
 
 const profile = ({navigation}) => {
-  const handleDelete = () =>{
+  const handleDelete = (id) =>{
   
   }
+
   return(
     <View>
             <Text style={styles.title}>profile</Text>

@@ -212,16 +212,22 @@ const signIn = () => {
 
 
 const styles = StyleSheet.create({
-  logo:{
-    // width: 400
+  screen: {
+    flex: 1,
+    backgroundColor: "#d3d3d3",
   },
-    title: {
-      fontSize: 24,
-      fontWeight: '600',
-      padding: 4,
-      paddingRight: 12,
-      textAlign: 'center',
-    },
+  imgContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 50,
+  },
+
+  logo: {
+    width: 150,
+    height: 150,
+    borderRadius: 50,
+  },
+
   phoneInputContainer: {
     justifyContent: "center",
     alignItems: "center",

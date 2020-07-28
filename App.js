@@ -21,18 +21,19 @@ const Stack = createStackNavigator();
 const App = () => {
   return (  
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Wall">
+      <Stack.Navigator initialRouteName="SignIn">
         <Stack.Screen 
             name="SignIn" 
-            component={SignIn} />
+            component={SignIn} 
+            options={{headerTitle: null}}/>
         <Stack.Screen 
             name='Wall' 
             component={Wall} 
-            options={{ headerTitle: () => <HeaderMenu /> , headerLeft: null}}/>
+            options={{ headerTitle: props => <HeaderMenu {...props} /> , headerLeft: null}}/>
         <Stack.Screen 
             name="Profile" 
             component={Profile} 
-            options={{ headerTitle: () => <HeaderMenu />, headerLeft: null}}/>
+            options={{ headerTitle: props => <HeaderMenu {...props} />, headerLeft: null}}/>
         <Stack.Screen 
             name="Settings" 
             component={Settings} 
