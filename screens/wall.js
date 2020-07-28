@@ -77,6 +77,7 @@ const wall = ({navigation}) => {
   const [inputVisibiliy, setInputVisibility] = useState(false)
   const handleInput = () =>{
     setInputVisibility(!inputVisibiliy)
+    setErrMsg('')
   }
   return(
     //TODO: styling/replacing textInput container + validation
@@ -107,7 +108,7 @@ const wall = ({navigation}) => {
               reverse
               name='send'
               type='font-awesome'
-              size={22}
+              size={27}
               color='#42435b'
               onPress={handleSubmit}/>
               </View>
@@ -123,6 +124,7 @@ const styles = StyleSheet.create({
     container:{
       flex:1,
       marginTop: 0,
+      backgroundColor: "#d3d3d3",
     },
     postInput: {
       fontSize: 24,
@@ -133,18 +135,22 @@ const styles = StyleSheet.create({
       backgroundColor: "white"
     },
     inputBox:{
-      backgroundColor: "white",
+      flex:0,
+      backgroundColor: "#d3d3d3",
       textAlign:"center"
     },
     subBox:{
       flex:0,
       flexDirection:'row',
-      justifyContent:'space-around',
-      alignItems:'center'
+      justifyContent:'space-between',
+      alignItems:'flex-end',
+      height:9,
+      marginRight:10
     },
     err:{
       color:'red',
-      textAlign:'center'
+      textAlign:'center',
+      marginLeft:10
     }
   });
 

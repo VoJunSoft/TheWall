@@ -215,6 +215,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: "#d3d3d3",
+    paddingTop:70
   },
   imgContainer: {
     justifyContent: "center",
@@ -223,8 +224,8 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 150,
-    height: 150,
+    width: 180,
+    height: 180,
     borderRadius: 50,
   },
 

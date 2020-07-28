@@ -59,9 +59,8 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       fontFamily:'Cheeky Bite Shine - AND',
       fontSize: 30,
-      // backgroundColor: '#42435b',
       fontWeight: '100',
-      padding: 7,
+      padding: 0,
       textAlign: 'center',
     }
 
