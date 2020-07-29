@@ -71,6 +71,16 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+<<<<<<< HEAD
+		<string>Cheeky Bite Shine - AND.ttf</string>
+		<string>Good Morning.ttf</string>
+		<string>MagicSchoolOne.ttf</string>
+		<string>MagicSchoolTwo.ttf</string>
+		<string>Outrun future Bold Italic.otf</string>
+		<string>Outrun future Bold.otf</string>
+		<string>Outrun future.otf</string>
+=======
+>>>>>>> b22b354c51a23838bd94d72a6b78b2547f6356df
 	</array>
 </dict>
 </plist>

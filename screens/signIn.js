@@ -125,7 +125,7 @@ const signIn = () => {
           </View>
         ) : (
             <View style={styles.imgContainer}>
-              <Image style={styles.logo} source={require("../design/wall.png")} />
+              <Image style={styles.logo} source={require("../assets/imgs/wall.png")} />
             </View>
           )}
 

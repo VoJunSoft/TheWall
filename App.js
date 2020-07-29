@@ -15,22 +15,13 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
 import SignIn from './screens/signIn'
+import Wall from './screens/wall'
 
 
 const App = () => {
-
-  return (
-    <SignIn />
+  return (        
+   <Wall />
   );
 };
 
