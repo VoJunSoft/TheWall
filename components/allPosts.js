@@ -32,9 +32,14 @@ const allPosts = (props) => {
     let data= new Date(dataD)
     let hrs = data.getHours()
     let mins = data.getMinutes()
+    if(hrs<=9)
+       hrs = '0' + hrs
+    if(mins<10)
+      mins = '0' + mins
     const postTime= hrs + ':' + mins
     return postTime
   }
+  
   return(
     //TODO: fix nested flastList issue/contradiction with scrollView
     <FlatList 
@@ -42,7 +47,7 @@ const allPosts = (props) => {
     keyExtractor={item => item.id}
     renderItem={ ({item}) => (
       <View style={styles.posts}>
-      <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
+      <ImageBackground source={item.postBg} style={styles.image}>
        <View style={styles.postsHeader}>
         <Icon
           reverse
@@ -73,30 +78,7 @@ const allPosts = (props) => {
     </View>
     )}
   />
-  
-//   props.posts.map(post => 
-//     <View style={styles.posts} key={post.userid}>
-//       <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
-//        <View style={styles.postsHeader}>
-//         <Icon
-//           reverse
-//           name='user'
-//           type='font-awesome'
-//           size={10}
-//           color='#42435b'
-//           onPress={() => console.log('hello')} />
-//         <Text style={styles.user}>{post.userid}</Text>
-//       </View>
 
-//       <Text style={styles.body}>{post.body}</Text>
-
-//       <View style={styles.dateTime}>
-//         <Text style={styles.date}>{handleDate(post.date)}</Text>
-//         <Text style={styles.date}>{handleTime(post.date)}</Text>
-//       </View>
-//       </ImageBackground>
-//     </View>
-//   )
   )
 }
 
@@ -104,7 +86,7 @@ const allPosts = (props) => {
 const styles = StyleSheet.create({
     image: {
       flex: 1,
-      resizeMode: "cover",
+      resizeMode:'cover',
       justifyContent: "center",
     },
     postsHeader:{
@@ -121,16 +103,18 @@ const styles = StyleSheet.create({
       alignItems:"center",
       paddingLeft:10,
       paddingRight:10,
+      fontWeight:'bold',
 
     },
     user:{
-      fontSize: 12,
+      fontSize: 15,
+      fontWeight:'bold',
       color:'black',
       textAlign: 'left',
       textAlignVertical: 'center'
     },
     body:{
-      fontSize: 22,
+      fontSize: 28,
       color:'black',
       padding: 4,
       paddingLeft: 22,
@@ -138,10 +122,11 @@ const styles = StyleSheet.create({
       fontFamily: "Good Morning"
     },
     date:{
-      fontSize: 12,
+      fontSize: 15,
       color:'black',
       padding: 4,
       textAlign: 'right',
+      fontWeight:'bold',
     },
     postInput: {
       flex:1,

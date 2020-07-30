@@ -7,9 +7,11 @@ import {
   Text,
   StatusBar,
   ImageBackground,
+  TouchableOpacity,
   FlatList,
   TextInput,
-  Button
+  Button,
+  Image
 } from 'react-native';
 
 import { Divider, Icon} from 'react-native-elements';
@@ -28,32 +30,38 @@ const wall = ({navigation}) => {
       id:'1',
       userid: '12345', 
       body: 'My first writting on the wall',
-      date: Date()
+      date: Date(),
+      postBg: require('../assets/imgs/wall00.png')
     },{
       id:'6',
       userid: '12347', 
       body: 'Bricks Bricks Bricks, Stick with STicks However then never end up left or right',
-      date: Date()
+      date: Date(),
+      postBg: require('../assets/imgs/wall02.jpg')
     },{
       id:'2',
       userid: '12347', 
       body: 'My first writting on the wall',
-      date: Date() 
+      date: Date(),
+      postBg: require('../assets/imgs/wall04.jpg') 
     },{
       id:'3',
       userid: '12347', 
       body: 'My first writting on the wall',
-      date: Date() 
+      date: Date(),
+      postBg: require('../assets/imgs/wall00.png')
     },{
       id:'4',
       userid: '12349', 
       body: 'My first writting on the wall',
-      date: Date() 
+      date: Date(),
+      postBg: require('../assets/imgs/wall04.jpg') 
     },{
       id:'5',
       userid: '12342', 
       body: 'My first writting on the wall',
-      date: Date() 
+      date: Date(),
+      postBg: require('../assets/imgs/wall04.jpg')  
     }
   ])
 
@@ -68,7 +76,7 @@ const wall = ({navigation}) => {
     setPosts((prevState) => {
     return [
       ...prevState,
-      {id:'6', userid: '6', body: input, date: Date()}
+      {id:'6', userid: '6', body: input, date: Date(), postBg: bgStyle}
     ]})
     setInput("")
     setInputVisibility(false)
@@ -79,6 +87,8 @@ const wall = ({navigation}) => {
     setInputVisibility(!inputVisibiliy)
     setErrMsg('')
   }
+  const [bgStyle, setBgStyle] = useState(require('../assets/imgs/wall00.png'))
+
   return(
     //TODO: styling/replacing textInput container + validation
     <View style={styles.container}>
@@ -89,20 +99,37 @@ const wall = ({navigation}) => {
         />
         {inputVisibiliy ? 
         <View style={styles.inputBox}>
+        <ImageBackground source={bgStyle} style={styles.image}>
          <TextInput
             value={input}
             style={styles.postInput}
             onChangeText={text=> setInput(text)}
             multiline={true}
-            numberOfLines={3}
+            numberOfLines={4}
             maxLength={500}
             selectionColor="orange"
             placeholderTextColor="#42435b"
             placeholder="Write On the Wall..."
             underlineColorAndroid='transparent'
          />
+         </ImageBackground>
          <View style={styles.subBox}>
-          <Text style={styles.err}>{errMsg}</Text>
+          <Text style={styles.err}>{errMsg}</Text> 
+          <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall00.png'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall00.png")} />
+          </TouchableOpacity>
+          {/* <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall01.jpg'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall01.jpg")} />
+          </TouchableOpacity> */}
+          <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall02.jpg'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall02.jpg")} />
+          </TouchableOpacity>
+          {/* <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall03.jpg'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall03.jpg")} /> 
+          </TouchableOpacity> */}
+          <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall04.jpg'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall04.jpg")} />             
+          </TouchableOpacity>
             <Icon
               style={styles.send}
               reverse
@@ -115,7 +142,7 @@ const wall = ({navigation}) => {
          </View> : null
         }
         {/* <Divider style={{ backgroundColor: '#42435b' }} /> */}
-        <AllPosts posts={posts} deleteButton={false}/>
+        <AllPosts posts={posts} deleteButton={false} BG={bgStyle}/>
     </View>
   )
 }
@@ -126,18 +153,24 @@ const styles = StyleSheet.create({
       marginTop: 0,
       backgroundColor: "#d3d3d3",
     },
+    image: {
+      flex: 0,
+      resizeMode:'cover',
+      justifyContent: "center",
+      margin: 7
+    },
     postInput: {
       fontSize: 24,
       borderColor:'#42435b',
       borderWidth:1,
-      margin:7,
+      margin:0,
       fontFamily: "Outrun future",
-      backgroundColor: "white"
     },
     inputBox:{
       flex:0,
       backgroundColor: "#d3d3d3",
-      textAlign:"center"
+      textAlign:"center",
+      padding:5
     },
     subBox:{
       flex:0,
@@ -151,6 +184,13 @@ const styles = StyleSheet.create({
       color:'red',
       textAlign:'center',
       marginLeft:10
+    },
+    logo:{
+      width:40,
+      height:30,
+      borderColor:'black',
+      borderWidth:1,
+      borderRadius:3
     }
   });
 
