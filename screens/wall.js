@@ -1,19 +1,6 @@
-import React, {useState} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  ImageBackground,
-  TouchableOpacity,
-  FlatList,
-  TextInput,
-  Button,
-  Image
-} from 'react-native';
-
+import React, { useState, useEffect } from 'react';
+import { StyleSheet,ScrollView,View,Text,ImageBackground,TouchableOpacity,FlatList,TextInput,Button,Image } from 'react-native';
+import firestore from '@react-native-firebase/firestore';
 import { Divider, Icon} from 'react-native-elements';
 import HeaderMenu from '../components/header'
 import AllPosts from '../components/allPosts'
@@ -23,72 +10,103 @@ const wall = ({navigation}) => {
   //TODO: Check if user not logged in go to login screen
   
   const [input, setInput] = useState('')
-
-  //TODO: Load state from posts database. HINT: Use post id as key for the list
   const [posts, setPosts] = useState([
     { 
       id:'1',
       userid: '12345', 
       body: 'My first writting on the wall',
       date: Date(),
+      name:'Anonymous',
       postBg: require('../assets/imgs/wall00.png')
-    },{
-      id:'6',
-      userid: '12347', 
-      body: 'Bricks Bricks Bricks, Stick with STicks However then never end up left or right',
-      date: Date(),
-      postBg: require('../assets/imgs/wall02.jpg')
-    },{
-      id:'2',
-      userid: '12347', 
-      body: 'My first writting on the wall',
-      date: Date(),
-      postBg: require('../assets/imgs/wall04.jpg') 
-    },{
-      id:'3',
-      userid: '12347', 
-      body: 'My first writting on the wall',
-      date: Date(),
-      postBg: require('../assets/imgs/wall00.png')
-    },{
-      id:'4',
-      userid: '12349', 
-      body: 'My first writting on the wall',
-      date: Date(),
-      postBg: require('../assets/imgs/wall04.jpg') 
-    },{
-      id:'5',
-      userid: '12342', 
-      body: 'My first writting on the wall',
-      date: Date(),
-      postBg: require('../assets/imgs/wall04.jpg')  
     }
   ])
+  //get user's name and ID from Auth-logIN
+  const [userName, setUserName] = useState('Khaled')
+  const [userID, setUserID] = useState('IitAXPGy0NoBBZrtER68')
+
+  //TODO: change useEffect onRefresh
+  useEffect(() => {
+   // const subscriber = firestore()
+    firestore()
+      .collection('posts')
+      .get()
+      .then(querySnapshot => {
+        console.log('Total posts: ', querySnapshot.size);
+        setPosts([])
+        querySnapshot.forEach(documentSnapshot => {
+          console.log('post ID: ', documentSnapshot.id, documentSnapshot.data());
+          //load posts from DB into posts state
+          setPosts((prevState) => {
+            return [
+              {
+                id:documentSnapshot.id, 
+                userid: documentSnapshot.data().userid, 
+                body: documentSnapshot.data().body, 
+                date: documentSnapshot.data().date, 
+                name: documentSnapshot.data().name,
+                postBg: require('../assets/imgs/wall00.png')
+                //postBg: documentSnapshot.data().postBg
+              },  ...prevState
+            ]})
+        });
+      });
+      //Get userName. TODO get this from Auth instead of connecting to database
+      // firestore()
+      //   .collection('users')
+      //   .doc(userID)
+      //   .get()
+      //   .then(documentSnapshot => setUserName(documentSnapshot.data()))
+      // Stop listening for updates when no longer required
+      //return () => subscriber();
+  }, []);
+
 
   const [errMsg, setErrMsg]= useState('')
+
   const handleSubmit = () => {
     if(input.length<=12){
       setErrMsg("Your post is too short")
       return
     }
     //Add Input to posts state
-    //TODO: replace userid with user name and get rid of id as it gets automatically generated in firbase
+    //TO DO: Automated id
     setPosts((prevState) => {
     return [
-      ...prevState,
-      {id:'6', userid: '6', body: input, date: Date(), postBg: bgStyle}
+      {
+        id:'6', 
+        userid: userID, 
+        body: input, 
+        date: Date(), 
+        name:userName,
+        postBg: bgStyle
+    }, ...prevState
     ]})
+
+    //add post to database
+    firestore()
+      .collection('posts')
+      .add({
+        userid: userID,
+        body: input,
+        date: Date(),
+        name: userName,
+        postBg: bgStyle
+      })
+      .then(() => {
+        console.log('User added!');
+      });
+
     setInput("")
     setInputVisibility(false)
-    //TO DO: ENTER DATA TO DATABASE
   }
+
   const [inputVisibiliy, setInputVisibility] = useState(false)
   const handleInput = () =>{
     setInputVisibility(!inputVisibiliy)
     setErrMsg('')
   }
-  const [bgStyle, setBgStyle] = useState(require('../assets/imgs/wall00.png'))
 
+  const [bgStyle, setBgStyle] = useState(require('../assets/imgs/wall00.png'))
   return(
     //TODO: styling/replacing textInput container + validation
     <View style={styles.container}>
@@ -115,21 +133,26 @@ const wall = ({navigation}) => {
          </ImageBackground>
          <View style={styles.subBox}>
           <Text style={styles.err}>{errMsg}</Text> 
-          <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall00.png'))}>
+
+          <TouchableOpacity 
+            onPress={() => setBgStyle(require('../assets/imgs/wall00.png'))}>
             <Image style={styles.logo} source={require("../assets/imgs/wall00.png")} />
           </TouchableOpacity>
+
           {/* <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall01.jpg'))}>
             <Image style={styles.logo} source={require("../assets/imgs/wall01.jpg")} />
           </TouchableOpacity> */}
-          <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall02.jpg'))}>
+
+          <TouchableOpacity 
+            onPress={() => setBgStyle(require('../assets/imgs/wall02.jpg'))}>
             <Image style={styles.logo} source={require("../assets/imgs/wall02.jpg")} />
           </TouchableOpacity>
-          {/* <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall03.jpg'))}>
-            <Image style={styles.logo} source={require("../assets/imgs/wall03.jpg")} /> 
-          </TouchableOpacity> */}
-          <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall04.jpg'))}>
+
+          <TouchableOpacity 
+            onPress={() => setBgStyle(require('../assets/imgs/wall04.jpg'))}>
             <Image style={styles.logo} source={require("../assets/imgs/wall04.jpg")} />             
           </TouchableOpacity>
+
             <Icon
               style={styles.send}
               reverse
@@ -141,8 +164,9 @@ const wall = ({navigation}) => {
               </View>
          </View> : null
         }
-        {/* <Divider style={{ backgroundColor: '#42435b' }} /> */}
-        <AllPosts posts={posts} deleteButton={false} BG={bgStyle}/>
+        
+        <AllPosts posts={posts} deleteButton={false}/>
+
     </View>
   )
 }

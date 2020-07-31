@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  ImageBackground,
-  FlatList
-} from 'react-native';
+import { StyleSheet, ScrollView, View, Text, StatusBar, ImageBackground, FlatList } from 'react-native';
 
 import { Button, ThemeProvider, Header, Icon } from 'react-native-elements';
 
@@ -56,7 +47,7 @@ const allPosts = (props) => {
           size={10}
           color='#42435b'
           onPress={() => console.log('hello')} />
-        <Text style={styles.user}>{item.userid}</Text>
+        <Text style={styles.user}>{item.name}</Text>
       </View>
 
       <Text style={styles.body}>{item.body}</Text>

@@ -9,6 +9,7 @@ MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/junglesoft/.gradle/cach
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/73c843f534fcb42eae9a9539c6c8a817/flipper-network-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7f9c9329b99af42079a512b3d3faecfc/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-firebase_firestore] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/firestore/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-community_masked-view] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -257,6 +258,8 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesof
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7f9c9329b99af42079a512b3d3faecfc/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_auth] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_firestore] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/firestore/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_firestore] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/firestore/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_app] /Users/junglesoft/Downloads/TheWall/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/junglesoft/.gradle/caches/transforms-2/files-2.1/f6c26d77abf5f2b70d12f25e435eeb77/multidex-2.0.0/AndroidManifest.xml:20:5-43

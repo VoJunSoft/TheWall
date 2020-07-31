@@ -10,9 +10,8 @@ androidx/transition/R.java
  androidx.transition.R$string
  androidx.transition.R$style
  androidx.transition.R$styleable
-com/wall/MainApplication.java
- com.wall.MainApplication
- com.wall.MainApplication$1
+com/google/android/gms/ads_identifier/R.java
+ com.google.android.gms.ads_identifier.R
 com/facebook/fbcore/R.java
  com.facebook.fbcore.R
 androidx/print/R.java
@@ -628,8 +627,18 @@ com/facebook/flipper/plugins/network/R.java
  com.facebook.flipper.plugins.network.R$string
  com.facebook.flipper.plugins.network.R$style
  com.facebook.flipper.plugins.network.R$styleable
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
+androidx/viewpager2/R.java
+ androidx.viewpager2.R
+ androidx.viewpager2.R$attr
+ androidx.viewpager2.R$color
+ androidx.viewpager2.R$dimen
+ androidx.viewpager2.R$drawable
+ androidx.viewpager2.R$id
+ androidx.viewpager2.R$integer
+ androidx.viewpager2.R$layout
+ androidx.viewpager2.R$string
+ androidx.viewpager2.R$style
+ androidx.viewpager2.R$styleable
 com/facebook/fresco/ui/common/R.java
  com.facebook.fresco.ui.common.R
 com/facebook/drawee/R.java
@@ -727,17 +736,23 @@ androidx/vectordrawable/animated/R.java
  androidx.vectordrawable.animated.R$string
  androidx.vectordrawable.animated.R$style
  androidx.vectordrawable.animated.R$styleable
-androidx/viewpager2/R.java
- androidx.viewpager2.R
- androidx.viewpager2.R$attr
- androidx.viewpager2.R$color
- androidx.viewpager2.R$dimen
- androidx.viewpager2.R$drawable
- androidx.viewpager2.R$id
- androidx.viewpager2.R$integer
- androidx.viewpager2.R$layout
- androidx.viewpager2.R$string
- androidx.viewpager2.R$style
- androidx.viewpager2.R$styleable
-com/google/android/gms/ads_identifier/R.java
- com.google.android.gms.ads_identifier.R
+com/wall/MainApplication.java
+ com.wall.MainApplication
+ com.wall.MainApplication$1
+io/invertase/firebase/firestore/R.java
+ io.invertase.firebase.firestore.R
+ io.invertase.firebase.firestore.R$anim
+ io.invertase.firebase.firestore.R$attr
+ io.invertase.firebase.firestore.R$bool
+ io.invertase.firebase.firestore.R$color
+ io.invertase.firebase.firestore.R$dimen
+ io.invertase.firebase.firestore.R$drawable
+ io.invertase.firebase.firestore.R$id
+ io.invertase.firebase.firestore.R$integer
+ io.invertase.firebase.firestore.R$layout
+ io.invertase.firebase.firestore.R$string
+ io.invertase.firebase.firestore.R$style
+ io.invertase.firebase.firestore.R$styleable
+ io.invertase.firebase.firestore.R$xml
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
