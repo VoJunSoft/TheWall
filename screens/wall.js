@@ -9,23 +9,19 @@ import AllPosts from '../components/allPosts'
 const wall = ({navigation}) => {
   //TODO: Check if user not logged in go to login screen
   
+  //input is the body of the new post
   const [input, setInput] = useState('')
-  const [posts, setPosts] = useState([
-    { 
-      id:'1',
-      userid: '12345', 
-      body: 'My first writting on the wall',
-      date: Date(),
-      name:'Anonymous',
-      postBg: require('../assets/imgs/wall00.png')
-    }
-  ])
+  //initialize empty posts state
+  const [posts, setPosts] = useState([])
+
   //get user's name and ID from Auth-logIN
   const [userName, setUserName] = useState('Khaled')
   const [userID, setUserID] = useState('IitAXPGy0NoBBZrtER68')
 
   //TODO: change useEffect onRefresh
   useEffect(() => {
+    //set default png
+   
    // const subscriber = firestore()
     firestore()
       .collection('posts')
@@ -44,8 +40,8 @@ const wall = ({navigation}) => {
                 body: documentSnapshot.data().body, 
                 date: documentSnapshot.data().date, 
                 name: documentSnapshot.data().name,
-                postBg: require('../assets/imgs/wall00.png')
-                //postBg: documentSnapshot.data().postBg
+                //postBg: require('../assets/imgs/wall00.png')
+                postBg: documentSnapshot.data().postBg
               },  ...prevState
             ]})
         });
@@ -68,6 +64,9 @@ const wall = ({navigation}) => {
       setErrMsg("Your post is too short")
       return
     }
+    // if(!bgStyle)
+    //   setBgStyle(require('../assets/imgs/wall00.png'))
+
     //Add Input to posts state
     //TO DO: Automated id
     setPosts((prevState) => {
@@ -106,9 +105,10 @@ const wall = ({navigation}) => {
     setErrMsg('')
   }
 
+  //default background image
   const [bgStyle, setBgStyle] = useState(require('../assets/imgs/wall00.png'))
+  
   return(
-    //TODO: styling/replacing textInput container + validation
     <View style={styles.container}>
         <Button 
           onPress={handleInput}
@@ -165,6 +165,8 @@ const wall = ({navigation}) => {
          </View> : null
         }
         
+        {/* TODO: possible loading command */}
+
         <AllPosts posts={posts} deleteButton={false}/>
 
     </View>

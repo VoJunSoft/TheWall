@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
       flex: 1,
       resizeMode:'cover',
       justifyContent: "center",
+      borderRadius: 15
     },
     postsHeader:{
       flex:1,
@@ -137,7 +138,8 @@ const styles = StyleSheet.create({
       padding: 4,
       margin: 7,
       textAlign: 'center',
-      backgroundColor:'lightgray'
+      backgroundColor:'lightgray',
+      borderRadius: 5
     }
   });
 export default allPosts;
