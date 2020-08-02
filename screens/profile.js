@@ -30,8 +30,8 @@ const profile = ({ route, navigation }) => {
 
   //state for if data feild is currently editable or not
   const [editable, setEditable] = useState(false)
-  const [userName,setUserName] = useState();
-  
+  const [userName, setUserName] = useState(userDisplayName);
+
 
 
   useEffect(() => {
@@ -69,12 +69,12 @@ const profile = ({ route, navigation }) => {
 
   const handleSave = () => {
 
-  auth().currentUser.updateProfile({
+    auth().currentUser.updateProfile({
 
-    displayName: userName
-  })
+      displayName: userName
+    })
 
-  userDisplayName = userName
+    userDisplayName = userName
 
     setEditable(false)
   }
@@ -95,9 +95,13 @@ const profile = ({ route, navigation }) => {
             />
           </View>
 
+          {/* User without name view */}
+
           {userDisplayName == null ? (
 
             <View>
+
+              {/* User without name & Non Editable inputs view */}
 
               {editable == false ? (
 
@@ -115,23 +119,24 @@ const profile = ({ route, navigation }) => {
 
                 </View>
 
+                //* User without name & Editable inputs view *//
 
 
               ) : (
 
-                <View style={styles.saveNameTopContainer}>
+                  <View style={styles.saveNameTopContainer}>
 
-                <TextInput style={styles.userNameTextInput} placeholder="Anonymous" onChangeText={handleChange}></TextInput>
+                    <TextInput style={styles.userNameTextInput} placeholder="Anonymous" onChangeText={handleChange}></TextInput>
 
-                <TouchableOpacity style={styles.saveButtonContainer} onPress={handleSave}>
+                    <TouchableOpacity style={styles.saveButtonContainer} onPress={handleSave}>
 
-                  <Text style={styles.saveButton}>Save</Text>
-
-
-                </TouchableOpacity>
+                      <Text style={styles.saveButton}>Save</Text>
 
 
-              </View>
+                    </TouchableOpacity>
+
+
+                  </View>
 
 
                 )}
@@ -140,46 +145,48 @@ const profile = ({ route, navigation }) => {
 
           ) : (
 
-            <View>
+              //* User with name & Non Editable inputs view *//
 
-            {editable == false ? (
+              < View >
 
-              <View style={styles.editNameTopContainer}>
+                {editable == false ? (
 
-            <Text style={styles.userNameText}>{userName}</Text>
+                  <View style={styles.editNameTopContainer}>
 
-                <TouchableOpacity style={styles.editButtonContainer} onPress={handleEdit}>
+                    <Text style={styles.userNameText}>{userName}</Text>
 
-                  <Text style={styles.editButton}>Edit</Text>
+                    <TouchableOpacity style={styles.editButtonContainer} onPress={handleEdit}>
+
+                      <Text style={styles.editButton}>Edit</Text>
 
 
-                </TouchableOpacity>
+                    </TouchableOpacity>
 
+
+                  </View>
+
+                 //* User with name & Editable inputs view *//
+
+                ) : (
+
+                    <View style={styles.saveNameTopContainer}>
+
+                      <TextInput style={styles.userNameTextInput} defaultValue={userDisplayName} onChangeText={handleChange}></TextInput>
+
+                      <TouchableOpacity style={styles.saveButtonContainer} onPress={handleSave}>
+
+                        <Text style={styles.saveButton}>Save</Text>
+
+
+                      </TouchableOpacity>
+
+
+                    </View>
+
+
+                  )}
 
               </View>
-
-
-
-            ) : (
-
-              <View style={styles.saveNameTopContainer}>
-
-              <TextInput style={styles.userNameTextInput} defaultValue={userDisplayName} onChangeText={handleChange}></TextInput>
-
-              <TouchableOpacity style={styles.saveButtonContainer} onPress={handleSave}>
-
-                <Text style={styles.saveButton}>Save</Text>
-
-
-              </TouchableOpacity>
-
-
-            </View>
-
-
-              )}
-
-          </View>
 
             )}
 
@@ -208,7 +215,7 @@ const profile = ({ route, navigation }) => {
 
             ) : (
 
-                <Text style={styles.userNameText}>{userDisplayName}</Text>
+                <Text style={styles.userNameText}>{userName}</Text>
 
               )}
 
@@ -251,7 +258,7 @@ const styles = StyleSheet.create({
     margin: 10,
     fontWeight: "bold",
     fontSize: 20,
-    alignSelf : "center"
+    alignSelf: "center"
 
   },
 
@@ -273,8 +280,8 @@ const styles = StyleSheet.create({
   editButton: {
     alignSelf: "center",
     color: "white"
-  }, 
-  
+  },
+
   saveNameTopContainer: {
     alignItems: "center"
   },
@@ -295,14 +302,14 @@ const styles = StyleSheet.create({
     color: "white"
   },
 
-  userNameTextInput : {
+  userNameTextInput: {
 
     margin: 10,
     fontWeight: "bold",
     fontSize: 20,
-    backgroundColor : "#DDE3D8",
-    width : 150,
-    
+    backgroundColor: "#DDE3D8",
+    width: 150,
+
   }
 
 
