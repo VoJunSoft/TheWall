@@ -74,8 +74,6 @@ const profile = ({ route, navigation }) => {
       displayName: userName
     })
 
-    userDisplayName = userName
-
     setEditable(false)
   }
 
