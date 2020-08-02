@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 
 import { Button, ThemeProvider, Header, Icon } from 'react-native-elements';
-import { IconX } from 'react-native-vector-icons'
 
 const allPosts = (props) => {
   //Date format
@@ -36,10 +35,13 @@ const allPosts = (props) => {
     const postTime= hrs + ':' + mins
     return postTime
   }
+
+  console.log(props.posts)
   return(
+    //TODO: fix nested flastList issue/contradiction with scrollView
     <FlatList 
     data={props.posts}
-    keyExtractor={item => item.userid}
+    keyExtractor={item => item.id}
     renderItem={ ({item}) => (
       <View style={styles.posts}>
       <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
@@ -59,35 +61,44 @@ const allPosts = (props) => {
       <View style={styles.dateTime}>
         <Text style={styles.date}>{handleDate(item.date)}</Text>
         <Text style={styles.date}>{handleTime(item.date)}</Text>
+        { props.deleteButton ?
+        <Icon
+          reverse
+          name='trash'
+          type='font-awesome'
+          size={10}
+          color='red'
+          onPress={() => props.handleDelete(props.postId)} /> : null
+        }
       </View>
       </ImageBackground>
     </View>
     )}
   />
-  /* {
-  posts.map(post => 
-    <View style={styles.posts} key={post.userid}>
-      <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
-       <View style={styles.postsHeader}>
-        <Icon
-          reverse
-          name='user'
-          type='font-awesome'
-          size={10}
-          color='#42435b'
-          onPress={() => console.log('hello')} />
-        <Text style={styles.user}>{post.userid}</Text>
-      </View>
+  
+//   props.posts.map(post => 
+//     <View style={styles.posts} key={post.userid}>
+//       <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
+//        <View style={styles.postsHeader}>
+//         <Icon
+//           reverse
+//           name='user'
+//           type='font-awesome'
+//           size={10}
+//           color='#42435b'
+//           onPress={() => console.log('hello')} />
+//         <Text style={styles.user}>{post.userid}</Text>
+//       </View>
 
-      <Text style={styles.body}>{post.body}</Text>
+//       <Text style={styles.body}>{post.body}</Text>
 
-      <View style={styles.dateTime}>
-        <Text style={styles.date}>{handleDate(post.date)}</Text>
-        <Text style={styles.date}>{handleTime(post.date)}</Text>
-      </View>
-      </ImageBackground>
-    </View>
-  )} */
+//       <View style={styles.dateTime}>
+//         <Text style={styles.date}>{handleDate(post.date)}</Text>
+//         <Text style={styles.date}>{handleTime(post.date)}</Text>
+//       </View>
+//       </ImageBackground>
+//     </View>
+//   )
   )
 }
 
@@ -109,6 +120,7 @@ const styles = StyleSheet.create({
       flex:1,
       flexDirection:'row',
       justifyContent:'space-between',
+      alignItems:"center",
       paddingLeft:10,
       paddingRight:10,
 
@@ -149,7 +161,7 @@ const styles = StyleSheet.create({
       fontSize: 24,
       color:'green',
       padding: 4,
-      margin: 10,
+      margin: 7,
       textAlign: 'center',
       backgroundColor:'lightgray'
     }
