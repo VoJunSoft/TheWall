@@ -36,12 +36,15 @@ const allPosts = (props) => {
     return postTime
   }
 
-  console.log(props.posts)
+
+console.log(props.posts)
+
+
   return(
     //TODO: fix nested flastList issue/contradiction with scrollView
     <FlatList 
     data={props.posts}
-    keyExtractor={item => item.id}
+    keyExtractor={item => item.postID}
     renderItem={ ({item}) => (
       <View style={styles.posts}>
       <ImageBackground source={require('../assets/imgs/postsbg1.png')} style={styles.image}>
@@ -53,7 +56,7 @@ const allPosts = (props) => {
           size={10}
           color='#42435b'
           onPress={() => console.log('hello')} />
-        <Text style={styles.user}>{item.userid}</Text>
+        <Text style={styles.user}>{item.name}</Text>
       </View>
 
       <Text style={styles.body}>{item.body}</Text>
@@ -68,7 +71,7 @@ const allPosts = (props) => {
           type='font-awesome'
           size={10}
           color='red'
-          onPress={() => props.handleDelete(props.postId)} /> : null
+          onPress={() => props.handleDelete(item.postID)} /> : null
         }
       </View>
       </ImageBackground>

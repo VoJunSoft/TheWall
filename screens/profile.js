@@ -26,11 +26,10 @@ const profile = ({ route, navigation }) => {
 
   const [userPosts, setUserPosts] = useState([])
 
-  const [postId, setPostId] = useState()
-
   //state for if data feild is currently editable or not
   const [editable, setEditable] = useState(false)
   const [userName, setUserName] = useState(userDisplayName);
+  const [havePosts, setHavePosts] = useState(false)
 
 
 
@@ -39,14 +38,21 @@ const profile = ({ route, navigation }) => {
       .collection('posts')
       .where("userid", "==", userData.uid)
       .onSnapshot(snapshot => {
-        const posts = snapshot.docs.map(post => {
-          setPostId(post.id)
-          return post.data()
-        })
-        setUserPosts(posts)
+        if (snapshot.empty) {
+          setHavePosts(false);
+        } else {
+          setHavePosts(true);
+          const posts = snapshot.docs.map(post => {
+            //Add post id to the data object so that we can extract postID later on in the allposts component
+            Object.assign(post.data(), {postID: post.id})
+            return post.data()
+          })
+          setUserPosts(posts)
+        }
+
       })
 
-  }, [userPosts])
+  }, [])
 
 
   const handleDelete = (postID) => {
@@ -163,13 +169,13 @@ const profile = ({ route, navigation }) => {
 
                   </View>
 
-                 //* User with name & Editable inputs view *//
+                  //* User with name & Editable inputs view *//
 
                 ) : (
 
                     <View style={styles.saveNameTopContainer}>
 
-                      <TextInput style={styles.userNameTextInput} defaultValue={userDisplayName} onChangeText={handleChange}></TextInput>
+                      <TextInput style={styles.userNameTextInput} defaultValue={userName} onChangeText={handleChange}></TextInput>
 
                       <TouchableOpacity style={styles.saveButtonContainer} onPress={handleSave}>
 
@@ -225,7 +231,26 @@ const profile = ({ route, navigation }) => {
         )
       }
 
-      <AllPosts postId={postId} posts={userPosts} deleteButton={true} handleDelete={handleDelete} />
+
+      {/*User having posts view */}
+
+      {havePosts ? (
+
+        <AllPosts posts={userPosts} deleteButton={true} handleDelete={handleDelete} />
+
+
+      ) : (
+
+        //User having no posts view // 
+
+        <Text style={styles.noPostText}>Start writing on the wall . You dont have any post yet</Text>
+
+   )}
+
+
+
+
+
 
 
       {/* This will display all posts in your state with the delete Button
@@ -308,6 +333,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#DDE3D8",
     width: 150,
 
+  },
+
+  noPostText : {
+
+    alignSelf: "center",
+    color: "black"
   }
 
 
