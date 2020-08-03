@@ -296,6 +296,10 @@
         "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/775e1b422ca15942b0e3d1d81f703709/play-services-base-17.1.0/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
+        "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_page.xml.flat",
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7c1d66cb6abf9e849151745e8ad8c00c/browser-1.0.0/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
         "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ce6ed23d8541abd738a71df711c92e65/appcompat-1.1.0/res/drawable-v21/abc_btn_colored_material.xml"
     },
@@ -1838,6 +1842,10 @@
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat",
         "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/ce6ed23d8541abd738a71df711c92e65/appcompat-1.1.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_row.xml.flat",
+        "source": "/Users/junglesoft/.gradle/caches/transforms-2/files-2.1/7c1d66cb6abf9e849151745e8ad8c00c/browser-1.0.0/res/layout/browser_actions_context_menu_row.xml"
     },
     {
         "merged": "/Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",

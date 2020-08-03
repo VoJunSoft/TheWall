@@ -10,65 +10,25 @@ androidx/transition/R.java
  androidx.transition.R$string
  androidx.transition.R$style
  androidx.transition.R$styleable
-com/google/android/gms/ads_identifier/R.java
- com.google.android.gms.ads_identifier.R
-com/facebook/fbcore/R.java
- com.facebook.fbcore.R
 androidx/print/R.java
  androidx.print.R
-androidx/vectordrawable/R.java
- androidx.vectordrawable.R
- androidx.vectordrawable.R$attr
- androidx.vectordrawable.R$color
- androidx.vectordrawable.R$dimen
- androidx.vectordrawable.R$drawable
- androidx.vectordrawable.R$id
- androidx.vectordrawable.R$integer
- androidx.vectordrawable.R$layout
- androidx.vectordrawable.R$string
- androidx.vectordrawable.R$style
- androidx.vectordrawable.R$styleable
-com/facebook/fresco/memorytypes/ashmem/R.java
- com.facebook.fresco.memorytypes.ashmem.R
- com.facebook.fresco.memorytypes.ashmem.R$attr
- com.facebook.fresco.memorytypes.ashmem.R$color
- com.facebook.fresco.memorytypes.ashmem.R$dimen
- com.facebook.fresco.memorytypes.ashmem.R$drawable
- com.facebook.fresco.memorytypes.ashmem.R$id
- com.facebook.fresco.memorytypes.ashmem.R$integer
- com.facebook.fresco.memorytypes.ashmem.R$layout
- com.facebook.fresco.memorytypes.ashmem.R$string
- com.facebook.fresco.memorytypes.ashmem.R$style
- com.facebook.fresco.memorytypes.ashmem.R$styleable
-com/facebook/imagepipelinebase/R.java
- com.facebook.imagepipelinebase.R
- com.facebook.imagepipelinebase.R$attr
- com.facebook.imagepipelinebase.R$color
- com.facebook.imagepipelinebase.R$dimen
- com.facebook.imagepipelinebase.R$drawable
- com.facebook.imagepipelinebase.R$id
- com.facebook.imagepipelinebase.R$integer
- com.facebook.imagepipelinebase.R$layout
- com.facebook.imagepipelinebase.R$string
- com.facebook.imagepipelinebase.R$style
- com.facebook.imagepipelinebase.R$styleable
+io/invertase/firebase/admob/R.java
+ io.invertase.firebase.admob.R
+ io.invertase.firebase.admob.R$anim
+ io.invertase.firebase.admob.R$attr
+ io.invertase.firebase.admob.R$bool
+ io.invertase.firebase.admob.R$color
+ io.invertase.firebase.admob.R$dimen
+ io.invertase.firebase.admob.R$drawable
+ io.invertase.firebase.admob.R$id
+ io.invertase.firebase.admob.R$integer
+ io.invertase.firebase.admob.R$layout
+ io.invertase.firebase.admob.R$string
+ io.invertase.firebase.admob.R$style
+ io.invertase.firebase.admob.R$styleable
+ io.invertase.firebase.admob.R$xml
 androidx/lifecycle/livedata/core/R.java
  androidx.lifecycle.livedata.core.R
-io/invertase/firebase/R.java
- io.invertase.firebase.R
- io.invertase.firebase.R$anim
- io.invertase.firebase.R$attr
- io.invertase.firebase.R$bool
- io.invertase.firebase.R$color
- io.invertase.firebase.R$dimen
- io.invertase.firebase.R$drawable
- io.invertase.firebase.R$id
- io.invertase.firebase.R$integer
- io.invertase.firebase.R$layout
- io.invertase.firebase.R$string
- io.invertase.firebase.R$style
- io.invertase.firebase.R$styleable
- io.invertase.firebase.R$xml
 com/facebook/imagepipeline/R.java
  com.facebook.imagepipeline.R
  com.facebook.imagepipeline.R$attr
@@ -93,37 +53,10 @@ androidx/appcompat/resources/R.java
  androidx.appcompat.resources.R$string
  androidx.appcompat.resources.R$style
  androidx.appcompat.resources.R$styleable
-com/google/android/gms/measurement/api/R.java
- com.google.android.gms.measurement.api.R
-com/facebook/fresco/stetho/R.java
- com.facebook.fresco.stetho.R
- com.facebook.fresco.stetho.R$attr
- com.facebook.fresco.stetho.R$color
- com.facebook.fresco.stetho.R$dimen
- com.facebook.fresco.stetho.R$drawable
- com.facebook.fresco.stetho.R$id
- com.facebook.fresco.stetho.R$integer
- com.facebook.fresco.stetho.R$layout
- com.facebook.fresco.stetho.R$string
- com.facebook.fresco.stetho.R$style
- com.facebook.fresco.stetho.R$styleable
+com/google/android/gms/gass/R.java
+ com.google.android.gms.gass.R
 firebase/com/protolitewrapper/R.java
  firebase.com.protolitewrapper.R
-com/th3rdwave/safeareacontext/R.java
- com.th3rdwave.safeareacontext.R
- com.th3rdwave.safeareacontext.R$anim
- com.th3rdwave.safeareacontext.R$attr
- com.th3rdwave.safeareacontext.R$bool
- com.th3rdwave.safeareacontext.R$color
- com.th3rdwave.safeareacontext.R$dimen
- com.th3rdwave.safeareacontext.R$drawable
- com.th3rdwave.safeareacontext.R$id
- com.th3rdwave.safeareacontext.R$integer
- com.th3rdwave.safeareacontext.R$layout
- com.th3rdwave.safeareacontext.R$string
- com.th3rdwave.safeareacontext.R$style
- com.th3rdwave.safeareacontext.R$styleable
- com.th3rdwave.safeareacontext.R$xml
 com/facebook/drawee/backends/pipeline/R.java
  com.facebook.drawee.backends.pipeline.R
  com.facebook.drawee.backends.pipeline.R$attr
@@ -153,18 +86,6 @@ androidx/fragment/R.java
  androidx.fragment.R$string
  androidx.fragment.R$style
  androidx.fragment.R$styleable
-com/google/firebase/database/collection/R.java
- com.google.firebase.database.collection.R
- com.google.firebase.database.collection.R$attr
- com.google.firebase.database.collection.R$color
- com.google.firebase.database.collection.R$dimen
- com.google.firebase.database.collection.R$drawable
- com.google.firebase.database.collection.R$id
- com.google.firebase.database.collection.R$integer
- com.google.firebase.database.collection.R$layout
- com.google.firebase.database.collection.R$string
- com.google.firebase.database.collection.R$style
- com.google.firebase.database.collection.R$styleable
 androidx/savedstate/R.java
  androidx.savedstate.R
 com/google/android/gms/measurement_base/R.java
@@ -186,33 +107,6 @@ com/facebook/react/R.java
  com.facebook.react.R$style
  com.facebook.react.R$styleable
  com.facebook.react.R$xml
-com/facebook/nativefilters/R.java
- com.facebook.nativefilters.R
- com.facebook.nativefilters.R$attr
- com.facebook.nativefilters.R$color
- com.facebook.nativefilters.R$dimen
- com.facebook.nativefilters.R$drawable
- com.facebook.nativefilters.R$id
- com.facebook.nativefilters.R$integer
- com.facebook.nativefilters.R$layout
- com.facebook.nativefilters.R$string
- com.facebook.nativefilters.R$style
- com.facebook.nativefilters.R$styleable
-org/reactnative/maskedview/R.java
- org.reactnative.maskedview.R
- org.reactnative.maskedview.R$anim
- org.reactnative.maskedview.R$attr
- org.reactnative.maskedview.R$bool
- org.reactnative.maskedview.R$color
- org.reactnative.maskedview.R$dimen
- org.reactnative.maskedview.R$drawable
- org.reactnative.maskedview.R$id
- org.reactnative.maskedview.R$integer
- org.reactnative.maskedview.R$layout
- org.reactnative.maskedview.R$string
- org.reactnative.maskedview.R$style
- org.reactnative.maskedview.R$styleable
- org.reactnative.maskedview.R$xml
 com/google/firebase/firestore/R.java
  com.google.firebase.firestore.R
  com.google.firebase.firestore.R$attr
@@ -225,6 +119,18 @@ com/google/firebase/firestore/R.java
  com.google.firebase.firestore.R$string
  com.google.firebase.firestore.R$style
  com.google.firebase.firestore.R$styleable
+androidx/asynclayoutinflater/R.java
+ androidx.asynclayoutinflater.R
+ androidx.asynclayoutinflater.R$attr
+ androidx.asynclayoutinflater.R$color
+ androidx.asynclayoutinflater.R$dimen
+ androidx.asynclayoutinflater.R$drawable
+ androidx.asynclayoutinflater.R$id
+ androidx.asynclayoutinflater.R$integer
+ androidx.asynclayoutinflater.R$layout
+ androidx.asynclayoutinflater.R$string
+ androidx.asynclayoutinflater.R$style
+ androidx.asynclayoutinflater.R$styleable
 com/google/firebase/R.java
  com.google.firebase.R
  com.google.firebase.R$attr
@@ -254,21 +160,6 @@ com/facebook/flipper/plugins/fresco/R.java
  com.facebook.flipper.plugins.fresco.R$styleable
 androidx/interpolator/R.java
  androidx.interpolator.R
-io/invertase/firebase/auth/R.java
- io.invertase.firebase.auth.R
- io.invertase.firebase.auth.R$anim
- io.invertase.firebase.auth.R$attr
- io.invertase.firebase.auth.R$bool
- io.invertase.firebase.auth.R$color
- io.invertase.firebase.auth.R$dimen
- io.invertase.firebase.auth.R$drawable
- io.invertase.firebase.auth.R$id
- io.invertase.firebase.auth.R$integer
- io.invertase.firebase.auth.R$layout
- io.invertase.firebase.auth.R$string
- io.invertase.firebase.auth.R$style
- io.invertase.firebase.auth.R$styleable
- io.invertase.firebase.auth.R$xml
 androidx/core/R.java
  androidx.core.R
  androidx.core.R$attr
@@ -289,47 +180,6 @@ com/google/android/gms/common/R.java
  com.google.android.gms.common.R
  com.google.android.gms.common.R$integer
  com.google.android.gms.common.R$string
-androidx/activity/R.java
- androidx.activity.R
- androidx.activity.R$attr
- androidx.activity.R$color
- androidx.activity.R$dimen
- androidx.activity.R$drawable
- androidx.activity.R$id
- androidx.activity.R$integer
- androidx.activity.R$layout
- androidx.activity.R$string
- androidx.activity.R$style
- androidx.activity.R$styleable
-androidx/recyclerview/R.java
- androidx.recyclerview.R
- androidx.recyclerview.R$attr
- androidx.recyclerview.R$color
- androidx.recyclerview.R$dimen
- androidx.recyclerview.R$drawable
- androidx.recyclerview.R$id
- androidx.recyclerview.R$integer
- androidx.recyclerview.R$layout
- androidx.recyclerview.R$string
- androidx.recyclerview.R$style
- androidx.recyclerview.R$styleable
-com/google/firebase/firebase_analytics/R.java
- com.google.firebase.firebase_analytics.R
-com/oblador/vectoricons/R.java
- com.oblador.vectoricons.R
- com.oblador.vectoricons.R$anim
- com.oblador.vectoricons.R$attr
- com.oblador.vectoricons.R$bool
- com.oblador.vectoricons.R$color
- com.oblador.vectoricons.R$dimen
- com.oblador.vectoricons.R$drawable
- com.oblador.vectoricons.R$id
- com.oblador.vectoricons.R$integer
- com.oblador.vectoricons.R$layout
- com.oblador.vectoricons.R$string
- com.oblador.vectoricons.R$style
- com.oblador.vectoricons.R$styleable
- com.oblador.vectoricons.R$xml
 com/google/android/gms/base/R.java
  com.google.android.gms.base.R
  com.google.android.gms.base.R$attr
@@ -350,62 +200,31 @@ com/google/firebase/installations/R.java
  com.google.firebase.installations.R$string
  com.google.firebase.installations.R$style
  com.google.firebase.installations.R$styleable
-androidx/drawerlayout/R.java
- androidx.drawerlayout.R
- androidx.drawerlayout.R$attr
- androidx.drawerlayout.R$color
- androidx.drawerlayout.R$dimen
- androidx.drawerlayout.R$drawable
- androidx.drawerlayout.R$id
- androidx.drawerlayout.R$integer
- androidx.drawerlayout.R$layout
- androidx.drawerlayout.R$string
- androidx.drawerlayout.R$style
- androidx.drawerlayout.R$styleable
-com/facebook/fresco/memorytypes/simple/R.java
- com.facebook.fresco.memorytypes.simple.R
- com.facebook.fresco.memorytypes.simple.R$attr
- com.facebook.fresco.memorytypes.simple.R$color
- com.facebook.fresco.memorytypes.simple.R$dimen
- com.facebook.fresco.memorytypes.simple.R$drawable
- com.facebook.fresco.memorytypes.simple.R$id
- com.facebook.fresco.memorytypes.simple.R$integer
- com.facebook.fresco.memorytypes.simple.R$layout
- com.facebook.fresco.memorytypes.simple.R$string
- com.facebook.fresco.memorytypes.simple.R$style
- com.facebook.fresco.memorytypes.simple.R$styleable
-androidx/versionedparcelable/R.java
- androidx.versionedparcelable.R
 com/facebook/soloader/R.java
  com.facebook.soloader.R
 androidx/multidex/R.java
  androidx.multidex.R
 com/facebook/imagepipeline/backends/okhttp3/R.java
  com.facebook.imagepipeline.backends.okhttp3.R
-androidx/lifecycle/viewmodel/R.java
- androidx.lifecycle.viewmodel.R
+com/google/android/ads/consent/R.java
+ com.google.android.ads.consent.R
+ com.google.android.ads.consent.R$anim
+ com.google.android.ads.consent.R$attr
+ com.google.android.ads.consent.R$bool
+ com.google.android.ads.consent.R$color
+ com.google.android.ads.consent.R$dimen
+ com.google.android.ads.consent.R$drawable
+ com.google.android.ads.consent.R$id
+ com.google.android.ads.consent.R$integer
+ com.google.android.ads.consent.R$layout
+ com.google.android.ads.consent.R$string
+ com.google.android.ads.consent.R$style
+ com.google.android.ads.consent.R$styleable
+com/google/android/gms/ads/impl/R.java
+ com.google.android.gms.ads.impl.R
+ com.google.android.gms.ads.impl.R$string
 io/grpc/android/R.java
  io.grpc.android.R
-com/swmansion/rnscreens/R.java
- com.swmansion.rnscreens.R
- com.swmansion.rnscreens.R$anim
- com.swmansion.rnscreens.R$animator
- com.swmansion.rnscreens.R$attr
- com.swmansion.rnscreens.R$bool
- com.swmansion.rnscreens.R$color
- com.swmansion.rnscreens.R$dimen
- com.swmansion.rnscreens.R$drawable
- com.swmansion.rnscreens.R$id
- com.swmansion.rnscreens.R$integer
- com.swmansion.rnscreens.R$interpolator
- com.swmansion.rnscreens.R$layout
- com.swmansion.rnscreens.R$plurals
- com.swmansion.rnscreens.R$string
- com.swmansion.rnscreens.R$style
- com.swmansion.rnscreens.R$styleable
- com.swmansion.rnscreens.R$xml
-androidx/cursoradapter/R.java
- androidx.cursoradapter.R
 com/facebook/fresco/memorytypes/nativememory/R.java
  com.facebook.fresco.memorytypes.nativememory.R
  com.facebook.fresco.memorytypes.nativememory.R$attr
@@ -418,13 +237,6 @@ com/facebook/fresco/memorytypes/nativememory/R.java
  com.facebook.fresco.memorytypes.nativememory.R$string
  com.facebook.fresco.memorytypes.nativememory.R$style
  com.facebook.fresco.memorytypes.nativememory.R$styleable
-androidx/cardview/R.java
- androidx.cardview.R
- androidx.cardview.R$attr
- androidx.cardview.R$color
- androidx.cardview.R$dimen
- androidx.cardview.R$style
- androidx.cardview.R$styleable
 androidx/swiperefreshlayout/R.java
  androidx.swiperefreshlayout.R
  androidx.swiperefreshlayout.R$attr
@@ -437,32 +249,6 @@ androidx/swiperefreshlayout/R.java
  androidx.swiperefreshlayout.R$string
  androidx.swiperefreshlayout.R$style
  androidx.swiperefreshlayout.R$styleable
-androidx/coordinatorlayout/R.java
- androidx.coordinatorlayout.R
- androidx.coordinatorlayout.R$attr
- androidx.coordinatorlayout.R$color
- androidx.coordinatorlayout.R$dimen
- androidx.coordinatorlayout.R$drawable
- androidx.coordinatorlayout.R$id
- androidx.coordinatorlayout.R$integer
- androidx.coordinatorlayout.R$layout
- androidx.coordinatorlayout.R$string
- androidx.coordinatorlayout.R$style
- androidx.coordinatorlayout.R$styleable
-com/facebook/imagepipeline/nativecode/R.java
- com.facebook.imagepipeline.nativecode.R
- com.facebook.imagepipeline.nativecode.R$attr
- com.facebook.imagepipeline.nativecode.R$color
- com.facebook.imagepipeline.nativecode.R$dimen
- com.facebook.imagepipeline.nativecode.R$drawable
- com.facebook.imagepipeline.nativecode.R$id
- com.facebook.imagepipeline.nativecode.R$integer
- com.facebook.imagepipeline.nativecode.R$layout
- com.facebook.imagepipeline.nativecode.R$string
- com.facebook.imagepipeline.nativecode.R$style
- com.facebook.imagepipeline.nativecode.R$styleable
-androidx/lifecycle/livedata/R.java
- androidx.lifecycle.livedata.R
 androidx/appcompat/R.java
  androidx.appcompat.R
  androidx.appcompat.R$anim
@@ -483,31 +269,20 @@ com/wall/ReactNativeFlipper.java
  com.wall.ReactNativeFlipper$1
  com.wall.ReactNativeFlipper$2
  com.wall.ReactNativeFlipper$2$1
-com/google/firebase/measurement_impl/R.java
- com.google.firebase.measurement_impl.R
-androidx/lifecycle/R.java
- androidx.lifecycle.R
-com/wall/R.java
- com.wall.R
- com.wall.R$anim
- com.wall.R$animator
- com.wall.R$attr
- com.wall.R$bool
- com.wall.R$color
- com.wall.R$dimen
- com.wall.R$drawable
- com.wall.R$id
- com.wall.R$integer
- com.wall.R$interpolator
- com.wall.R$layout
- com.wall.R$mipmap
- com.wall.R$plurals
- com.wall.R$string
- com.wall.R$style
- com.wall.R$styleable
- com.wall.R$xml
-androidx/documentfile/R.java
- androidx.documentfile.R
+com/google/firebase/firebase_ads/R.java
+ com.google.firebase.firebase_ads.R
+androidx/legacy/coreui/R.java
+ androidx.legacy.coreui.R
+ androidx.legacy.coreui.R$attr
+ androidx.legacy.coreui.R$color
+ androidx.legacy.coreui.R$dimen
+ androidx.legacy.coreui.R$drawable
+ androidx.legacy.coreui.R$id
+ androidx.legacy.coreui.R$integer
+ androidx.legacy.coreui.R$layout
+ androidx.legacy.coreui.R$string
+ androidx.legacy.coreui.R$style
+ androidx.legacy.coreui.R$styleable
 androidx/customview/R.java
  androidx.customview.R
  androidx.customview.R$attr
@@ -522,33 +297,6 @@ androidx/customview/R.java
  androidx.customview.R$styleable
 com/google/firebase/iid/R.java
  com.google.firebase.iid.R
-com/swmansion/reanimated/R.java
- com.swmansion.reanimated.R
- com.swmansion.reanimated.R$anim
- com.swmansion.reanimated.R$attr
- com.swmansion.reanimated.R$bool
- com.swmansion.reanimated.R$color
- com.swmansion.reanimated.R$dimen
- com.swmansion.reanimated.R$drawable
- com.swmansion.reanimated.R$id
- com.swmansion.reanimated.R$integer
- com.swmansion.reanimated.R$layout
- com.swmansion.reanimated.R$string
- com.swmansion.reanimated.R$style
- com.swmansion.reanimated.R$styleable
- com.swmansion.reanimated.R$xml
-androidx/loader/R.java
- androidx.loader.R
- androidx.loader.R$attr
- androidx.loader.R$color
- androidx.loader.R$dimen
- androidx.loader.R$drawable
- androidx.loader.R$id
- androidx.loader.R$integer
- androidx.loader.R$layout
- androidx.loader.R$string
- androidx.loader.R$style
- androidx.loader.R$styleable
 com/google/firebase/auth/R.java
  com.google.firebase.auth.R
 com/google/android/gms/stats/R.java
@@ -565,24 +313,6 @@ androidx/legacy/coreutils/R.java
  androidx.legacy.coreutils.R$string
  androidx.legacy.coreutils.R$style
  androidx.legacy.coreutils.R$styleable
-com/google/android/material/R.java
- com.google.android.material.R
- com.google.android.material.R$anim
- com.google.android.material.R$animator
- com.google.android.material.R$attr
- com.google.android.material.R$bool
- com.google.android.material.R$color
- com.google.android.material.R$dimen
- com.google.android.material.R$drawable
- com.google.android.material.R$id
- com.google.android.material.R$integer
- com.google.android.material.R$interpolator
- com.google.android.material.R$layout
- com.google.android.material.R$plurals
- com.google.android.material.R$string
- com.google.android.material.R$style
- com.google.android.material.R$styleable
- com.google.android.material.R$xml
 com/facebook/flipper/R.java
  com.facebook.flipper.R
  com.facebook.flipper.R$anim
@@ -598,18 +328,6 @@ com/facebook/flipper/R.java
  com.facebook.flipper.R$string
  com.facebook.flipper.R$style
  com.facebook.flipper.R$styleable
-com/facebook/fresco/flipper/R.java
- com.facebook.fresco.flipper.R
- com.facebook.fresco.flipper.R$attr
- com.facebook.fresco.flipper.R$color
- com.facebook.fresco.flipper.R$dimen
- com.facebook.fresco.flipper.R$drawable
- com.facebook.fresco.flipper.R$id
- com.facebook.fresco.flipper.R$integer
- com.facebook.fresco.flipper.R$layout
- com.facebook.fresco.flipper.R$string
- com.facebook.fresco.flipper.R$style
- com.facebook.fresco.flipper.R$styleable
 com/google/firebase/components/R.java
  com.google.firebase.components.R
 com/facebook/flipper/plugins/network/R.java
@@ -627,18 +345,6 @@ com/facebook/flipper/plugins/network/R.java
  com.facebook.flipper.plugins.network.R$string
  com.facebook.flipper.plugins.network.R$style
  com.facebook.flipper.plugins.network.R$styleable
-androidx/viewpager2/R.java
- androidx.viewpager2.R
- androidx.viewpager2.R$attr
- androidx.viewpager2.R$color
- androidx.viewpager2.R$dimen
- androidx.viewpager2.R$drawable
- androidx.viewpager2.R$id
- androidx.viewpager2.R$integer
- androidx.viewpager2.R$layout
- androidx.viewpager2.R$string
- androidx.viewpager2.R$style
- androidx.viewpager2.R$styleable
 com/facebook/fresco/ui/common/R.java
  com.facebook.fresco.ui.common.R
 com/facebook/drawee/R.java
@@ -653,48 +359,48 @@ com/facebook/drawee/R.java
  com.facebook.drawee.R$string
  com.facebook.drawee.R$style
  com.facebook.drawee.R$styleable
-org/webkit/androidjsc/R.java
- org.webkit.androidjsc.R
 com/google/android/gms/measurement/sdk/R.java
  com.google.android.gms.measurement.sdk.R
 com/google/firebase/firebase_core/R.java
  com.google.firebase.firebase_core.R
-com/wall/BuildConfig.java
- com.wall.BuildConfig
-com/facebook/nativeimagetranscoder/R.java
- com.facebook.nativeimagetranscoder.R
- com.facebook.nativeimagetranscoder.R$attr
- com.facebook.nativeimagetranscoder.R$color
- com.facebook.nativeimagetranscoder.R$dimen
- com.facebook.nativeimagetranscoder.R$drawable
- com.facebook.nativeimagetranscoder.R$id
- com.facebook.nativeimagetranscoder.R$integer
- com.facebook.nativeimagetranscoder.R$layout
- com.facebook.nativeimagetranscoder.R$string
- com.facebook.nativeimagetranscoder.R$style
- com.facebook.nativeimagetranscoder.R$styleable
-com/google/firebase/measurement/R.java
- com.google.firebase.measurement.R
+com/google/android/gms/ads/R.java
+ com.google.android.gms.ads.R
+ com.google.android.gms.ads.R$attr
+ com.google.android.gms.ads.R$style
+ com.google.android.gms.ads.R$styleable
 com/google/firebase/iid/internal/R.java
  com.google.firebase.iid.internal.R
-androidx/viewpager/R.java
- androidx.viewpager.R
- androidx.viewpager.R$attr
- androidx.viewpager.R$color
- androidx.viewpager.R$dimen
- androidx.viewpager.R$drawable
- androidx.viewpager.R$id
- androidx.viewpager.R$integer
- androidx.viewpager.R$layout
- androidx.viewpager.R$string
- androidx.viewpager.R$style
- androidx.viewpager.R$styleable
 androidx/localbroadcastmanager/R.java
  androidx.localbroadcastmanager.R
-com/google/android/gms/tasks/R.java
- com.google.android.gms.tasks.R
 com/google/firebase/auth/internal/R.java
  com.google.firebase.auth.internal.R
+androidx/browser/R.java
+ androidx.browser.R
+ androidx.browser.R$attr
+ androidx.browser.R$color
+ androidx.browser.R$dimen
+ androidx.browser.R$drawable
+ androidx.browser.R$id
+ androidx.browser.R$integer
+ androidx.browser.R$layout
+ androidx.browser.R$string
+ androidx.browser.R$style
+ androidx.browser.R$styleable
+io/invertase/firebase/firestore/R.java
+ io.invertase.firebase.firestore.R
+ io.invertase.firebase.firestore.R$anim
+ io.invertase.firebase.firestore.R$attr
+ io.invertase.firebase.firestore.R$bool
+ io.invertase.firebase.firestore.R$color
+ io.invertase.firebase.firestore.R$dimen
+ io.invertase.firebase.firestore.R$drawable
+ io.invertase.firebase.firestore.R$id
+ io.invertase.firebase.firestore.R$integer
+ io.invertase.firebase.firestore.R$layout
+ io.invertase.firebase.firestore.R$string
+ io.invertase.firebase.firestore.R$style
+ io.invertase.firebase.firestore.R$styleable
+ io.invertase.firebase.firestore.R$xml
 com/google/firebase/installations/interop/R.java
  com.google.firebase.installations.interop.R
  com.google.firebase.installations.interop.R$attr
@@ -736,23 +442,408 @@ androidx/vectordrawable/animated/R.java
  androidx.vectordrawable.animated.R$string
  androidx.vectordrawable.animated.R$style
  androidx.vectordrawable.animated.R$styleable
+androidx/viewpager2/R.java
+ androidx.viewpager2.R
+ androidx.viewpager2.R$attr
+ androidx.viewpager2.R$color
+ androidx.viewpager2.R$dimen
+ androidx.viewpager2.R$drawable
+ androidx.viewpager2.R$id
+ androidx.viewpager2.R$integer
+ androidx.viewpager2.R$layout
+ androidx.viewpager2.R$string
+ androidx.viewpager2.R$style
+ androidx.viewpager2.R$styleable
+com/google/android/gms/ads_identifier/R.java
+ com.google.android.gms.ads_identifier.R
 com/wall/MainApplication.java
  com.wall.MainApplication
  com.wall.MainApplication$1
-io/invertase/firebase/firestore/R.java
- io.invertase.firebase.firestore.R
- io.invertase.firebase.firestore.R$anim
- io.invertase.firebase.firestore.R$attr
- io.invertase.firebase.firestore.R$bool
- io.invertase.firebase.firestore.R$color
- io.invertase.firebase.firestore.R$dimen
- io.invertase.firebase.firestore.R$drawable
- io.invertase.firebase.firestore.R$id
- io.invertase.firebase.firestore.R$integer
- io.invertase.firebase.firestore.R$layout
- io.invertase.firebase.firestore.R$string
- io.invertase.firebase.firestore.R$style
- io.invertase.firebase.firestore.R$styleable
- io.invertase.firebase.firestore.R$xml
+com/facebook/fbcore/R.java
+ com.facebook.fbcore.R
+androidx/vectordrawable/R.java
+ androidx.vectordrawable.R
+ androidx.vectordrawable.R$attr
+ androidx.vectordrawable.R$color
+ androidx.vectordrawable.R$dimen
+ androidx.vectordrawable.R$drawable
+ androidx.vectordrawable.R$id
+ androidx.vectordrawable.R$integer
+ androidx.vectordrawable.R$layout
+ androidx.vectordrawable.R$string
+ androidx.vectordrawable.R$style
+ androidx.vectordrawable.R$styleable
+com/facebook/fresco/memorytypes/ashmem/R.java
+ com.facebook.fresco.memorytypes.ashmem.R
+ com.facebook.fresco.memorytypes.ashmem.R$attr
+ com.facebook.fresco.memorytypes.ashmem.R$color
+ com.facebook.fresco.memorytypes.ashmem.R$dimen
+ com.facebook.fresco.memorytypes.ashmem.R$drawable
+ com.facebook.fresco.memorytypes.ashmem.R$id
+ com.facebook.fresco.memorytypes.ashmem.R$integer
+ com.facebook.fresco.memorytypes.ashmem.R$layout
+ com.facebook.fresco.memorytypes.ashmem.R$string
+ com.facebook.fresco.memorytypes.ashmem.R$style
+ com.facebook.fresco.memorytypes.ashmem.R$styleable
+com/facebook/imagepipelinebase/R.java
+ com.facebook.imagepipelinebase.R
+ com.facebook.imagepipelinebase.R$attr
+ com.facebook.imagepipelinebase.R$color
+ com.facebook.imagepipelinebase.R$dimen
+ com.facebook.imagepipelinebase.R$drawable
+ com.facebook.imagepipelinebase.R$id
+ com.facebook.imagepipelinebase.R$integer
+ com.facebook.imagepipelinebase.R$layout
+ com.facebook.imagepipelinebase.R$string
+ com.facebook.imagepipelinebase.R$style
+ com.facebook.imagepipelinebase.R$styleable
+io/invertase/firebase/R.java
+ io.invertase.firebase.R
+ io.invertase.firebase.R$anim
+ io.invertase.firebase.R$attr
+ io.invertase.firebase.R$bool
+ io.invertase.firebase.R$color
+ io.invertase.firebase.R$dimen
+ io.invertase.firebase.R$drawable
+ io.invertase.firebase.R$id
+ io.invertase.firebase.R$integer
+ io.invertase.firebase.R$layout
+ io.invertase.firebase.R$string
+ io.invertase.firebase.R$style
+ io.invertase.firebase.R$styleable
+ io.invertase.firebase.R$xml
+com/google/android/gms/measurement/api/R.java
+ com.google.android.gms.measurement.api.R
+com/facebook/fresco/stetho/R.java
+ com.facebook.fresco.stetho.R
+ com.facebook.fresco.stetho.R$attr
+ com.facebook.fresco.stetho.R$color
+ com.facebook.fresco.stetho.R$dimen
+ com.facebook.fresco.stetho.R$drawable
+ com.facebook.fresco.stetho.R$id
+ com.facebook.fresco.stetho.R$integer
+ com.facebook.fresco.stetho.R$layout
+ com.facebook.fresco.stetho.R$string
+ com.facebook.fresco.stetho.R$style
+ com.facebook.fresco.stetho.R$styleable
+com/th3rdwave/safeareacontext/R.java
+ com.th3rdwave.safeareacontext.R
+ com.th3rdwave.safeareacontext.R$anim
+ com.th3rdwave.safeareacontext.R$attr
+ com.th3rdwave.safeareacontext.R$bool
+ com.th3rdwave.safeareacontext.R$color
+ com.th3rdwave.safeareacontext.R$dimen
+ com.th3rdwave.safeareacontext.R$drawable
+ com.th3rdwave.safeareacontext.R$id
+ com.th3rdwave.safeareacontext.R$integer
+ com.th3rdwave.safeareacontext.R$layout
+ com.th3rdwave.safeareacontext.R$string
+ com.th3rdwave.safeareacontext.R$style
+ com.th3rdwave.safeareacontext.R$styleable
+ com.th3rdwave.safeareacontext.R$xml
+com/google/firebase/database/collection/R.java
+ com.google.firebase.database.collection.R
+ com.google.firebase.database.collection.R$attr
+ com.google.firebase.database.collection.R$color
+ com.google.firebase.database.collection.R$dimen
+ com.google.firebase.database.collection.R$drawable
+ com.google.firebase.database.collection.R$id
+ com.google.firebase.database.collection.R$integer
+ com.google.firebase.database.collection.R$layout
+ com.google.firebase.database.collection.R$string
+ com.google.firebase.database.collection.R$style
+ com.google.firebase.database.collection.R$styleable
+com/facebook/nativefilters/R.java
+ com.facebook.nativefilters.R
+ com.facebook.nativefilters.R$attr
+ com.facebook.nativefilters.R$color
+ com.facebook.nativefilters.R$dimen
+ com.facebook.nativefilters.R$drawable
+ com.facebook.nativefilters.R$id
+ com.facebook.nativefilters.R$integer
+ com.facebook.nativefilters.R$layout
+ com.facebook.nativefilters.R$string
+ com.facebook.nativefilters.R$style
+ com.facebook.nativefilters.R$styleable
+org/reactnative/maskedview/R.java
+ org.reactnative.maskedview.R
+ org.reactnative.maskedview.R$anim
+ org.reactnative.maskedview.R$attr
+ org.reactnative.maskedview.R$bool
+ org.reactnative.maskedview.R$color
+ org.reactnative.maskedview.R$dimen
+ org.reactnative.maskedview.R$drawable
+ org.reactnative.maskedview.R$id
+ org.reactnative.maskedview.R$integer
+ org.reactnative.maskedview.R$layout
+ org.reactnative.maskedview.R$string
+ org.reactnative.maskedview.R$style
+ org.reactnative.maskedview.R$styleable
+ org.reactnative.maskedview.R$xml
+io/invertase/firebase/auth/R.java
+ io.invertase.firebase.auth.R
+ io.invertase.firebase.auth.R$anim
+ io.invertase.firebase.auth.R$attr
+ io.invertase.firebase.auth.R$bool
+ io.invertase.firebase.auth.R$color
+ io.invertase.firebase.auth.R$dimen
+ io.invertase.firebase.auth.R$drawable
+ io.invertase.firebase.auth.R$id
+ io.invertase.firebase.auth.R$integer
+ io.invertase.firebase.auth.R$layout
+ io.invertase.firebase.auth.R$string
+ io.invertase.firebase.auth.R$style
+ io.invertase.firebase.auth.R$styleable
+ io.invertase.firebase.auth.R$xml
+androidx/activity/R.java
+ androidx.activity.R
+ androidx.activity.R$attr
+ androidx.activity.R$color
+ androidx.activity.R$dimen
+ androidx.activity.R$drawable
+ androidx.activity.R$id
+ androidx.activity.R$integer
+ androidx.activity.R$layout
+ androidx.activity.R$string
+ androidx.activity.R$style
+ androidx.activity.R$styleable
+androidx/recyclerview/R.java
+ androidx.recyclerview.R
+ androidx.recyclerview.R$attr
+ androidx.recyclerview.R$color
+ androidx.recyclerview.R$dimen
+ androidx.recyclerview.R$drawable
+ androidx.recyclerview.R$id
+ androidx.recyclerview.R$integer
+ androidx.recyclerview.R$layout
+ androidx.recyclerview.R$string
+ androidx.recyclerview.R$style
+ androidx.recyclerview.R$styleable
+com/google/firebase/firebase_analytics/R.java
+ com.google.firebase.firebase_analytics.R
+com/oblador/vectoricons/R.java
+ com.oblador.vectoricons.R
+ com.oblador.vectoricons.R$anim
+ com.oblador.vectoricons.R$attr
+ com.oblador.vectoricons.R$bool
+ com.oblador.vectoricons.R$color
+ com.oblador.vectoricons.R$dimen
+ com.oblador.vectoricons.R$drawable
+ com.oblador.vectoricons.R$id
+ com.oblador.vectoricons.R$integer
+ com.oblador.vectoricons.R$layout
+ com.oblador.vectoricons.R$string
+ com.oblador.vectoricons.R$style
+ com.oblador.vectoricons.R$styleable
+ com.oblador.vectoricons.R$xml
+androidx/drawerlayout/R.java
+ androidx.drawerlayout.R
+ androidx.drawerlayout.R$attr
+ androidx.drawerlayout.R$color
+ androidx.drawerlayout.R$dimen
+ androidx.drawerlayout.R$drawable
+ androidx.drawerlayout.R$id
+ androidx.drawerlayout.R$integer
+ androidx.drawerlayout.R$layout
+ androidx.drawerlayout.R$string
+ androidx.drawerlayout.R$style
+ androidx.drawerlayout.R$styleable
+com/facebook/fresco/memorytypes/simple/R.java
+ com.facebook.fresco.memorytypes.simple.R
+ com.facebook.fresco.memorytypes.simple.R$attr
+ com.facebook.fresco.memorytypes.simple.R$color
+ com.facebook.fresco.memorytypes.simple.R$dimen
+ com.facebook.fresco.memorytypes.simple.R$drawable
+ com.facebook.fresco.memorytypes.simple.R$id
+ com.facebook.fresco.memorytypes.simple.R$integer
+ com.facebook.fresco.memorytypes.simple.R$layout
+ com.facebook.fresco.memorytypes.simple.R$string
+ com.facebook.fresco.memorytypes.simple.R$style
+ com.facebook.fresco.memorytypes.simple.R$styleable
+androidx/versionedparcelable/R.java
+ androidx.versionedparcelable.R
+androidx/lifecycle/viewmodel/R.java
+ androidx.lifecycle.viewmodel.R
+com/swmansion/rnscreens/R.java
+ com.swmansion.rnscreens.R
+ com.swmansion.rnscreens.R$anim
+ com.swmansion.rnscreens.R$animator
+ com.swmansion.rnscreens.R$attr
+ com.swmansion.rnscreens.R$bool
+ com.swmansion.rnscreens.R$color
+ com.swmansion.rnscreens.R$dimen
+ com.swmansion.rnscreens.R$drawable
+ com.swmansion.rnscreens.R$id
+ com.swmansion.rnscreens.R$integer
+ com.swmansion.rnscreens.R$interpolator
+ com.swmansion.rnscreens.R$layout
+ com.swmansion.rnscreens.R$plurals
+ com.swmansion.rnscreens.R$string
+ com.swmansion.rnscreens.R$style
+ com.swmansion.rnscreens.R$styleable
+ com.swmansion.rnscreens.R$xml
+androidx/cursoradapter/R.java
+ androidx.cursoradapter.R
+androidx/cardview/R.java
+ androidx.cardview.R
+ androidx.cardview.R$attr
+ androidx.cardview.R$color
+ androidx.cardview.R$dimen
+ androidx.cardview.R$style
+ androidx.cardview.R$styleable
+androidx/coordinatorlayout/R.java
+ androidx.coordinatorlayout.R
+ androidx.coordinatorlayout.R$attr
+ androidx.coordinatorlayout.R$color
+ androidx.coordinatorlayout.R$dimen
+ androidx.coordinatorlayout.R$drawable
+ androidx.coordinatorlayout.R$id
+ androidx.coordinatorlayout.R$integer
+ androidx.coordinatorlayout.R$layout
+ androidx.coordinatorlayout.R$string
+ androidx.coordinatorlayout.R$style
+ androidx.coordinatorlayout.R$styleable
+com/facebook/imagepipeline/nativecode/R.java
+ com.facebook.imagepipeline.nativecode.R
+ com.facebook.imagepipeline.nativecode.R$attr
+ com.facebook.imagepipeline.nativecode.R$color
+ com.facebook.imagepipeline.nativecode.R$dimen
+ com.facebook.imagepipeline.nativecode.R$drawable
+ com.facebook.imagepipeline.nativecode.R$id
+ com.facebook.imagepipeline.nativecode.R$integer
+ com.facebook.imagepipeline.nativecode.R$layout
+ com.facebook.imagepipeline.nativecode.R$string
+ com.facebook.imagepipeline.nativecode.R$style
+ com.facebook.imagepipeline.nativecode.R$styleable
+androidx/lifecycle/livedata/R.java
+ androidx.lifecycle.livedata.R
+com/google/firebase/measurement_impl/R.java
+ com.google.firebase.measurement_impl.R
+androidx/lifecycle/R.java
+ androidx.lifecycle.R
+com/wall/R.java
+ com.wall.R
+ com.wall.R$anim
+ com.wall.R$animator
+ com.wall.R$attr
+ com.wall.R$bool
+ com.wall.R$color
+ com.wall.R$dimen
+ com.wall.R$drawable
+ com.wall.R$id
+ com.wall.R$integer
+ com.wall.R$interpolator
+ com.wall.R$layout
+ com.wall.R$mipmap
+ com.wall.R$plurals
+ com.wall.R$string
+ com.wall.R$style
+ com.wall.R$styleable
+ com.wall.R$xml
+androidx/documentfile/R.java
+ androidx.documentfile.R
+com/swmansion/reanimated/R.java
+ com.swmansion.reanimated.R
+ com.swmansion.reanimated.R$anim
+ com.swmansion.reanimated.R$attr
+ com.swmansion.reanimated.R$bool
+ com.swmansion.reanimated.R$color
+ com.swmansion.reanimated.R$dimen
+ com.swmansion.reanimated.R$drawable
+ com.swmansion.reanimated.R$id
+ com.swmansion.reanimated.R$integer
+ com.swmansion.reanimated.R$layout
+ com.swmansion.reanimated.R$string
+ com.swmansion.reanimated.R$style
+ com.swmansion.reanimated.R$styleable
+ com.swmansion.reanimated.R$xml
+androidx/loader/R.java
+ androidx.loader.R
+ androidx.loader.R$attr
+ androidx.loader.R$color
+ androidx.loader.R$dimen
+ androidx.loader.R$drawable
+ androidx.loader.R$id
+ androidx.loader.R$integer
+ androidx.loader.R$layout
+ androidx.loader.R$string
+ androidx.loader.R$style
+ androidx.loader.R$styleable
+com/google/android/material/R.java
+ com.google.android.material.R
+ com.google.android.material.R$anim
+ com.google.android.material.R$animator
+ com.google.android.material.R$attr
+ com.google.android.material.R$bool
+ com.google.android.material.R$color
+ com.google.android.material.R$dimen
+ com.google.android.material.R$drawable
+ com.google.android.material.R$id
+ com.google.android.material.R$integer
+ com.google.android.material.R$interpolator
+ com.google.android.material.R$layout
+ com.google.android.material.R$plurals
+ com.google.android.material.R$string
+ com.google.android.material.R$style
+ com.google.android.material.R$styleable
+ com.google.android.material.R$xml
+com/facebook/fresco/flipper/R.java
+ com.facebook.fresco.flipper.R
+ com.facebook.fresco.flipper.R$attr
+ com.facebook.fresco.flipper.R$color
+ com.facebook.fresco.flipper.R$dimen
+ com.facebook.fresco.flipper.R$drawable
+ com.facebook.fresco.flipper.R$id
+ com.facebook.fresco.flipper.R$integer
+ com.facebook.fresco.flipper.R$layout
+ com.facebook.fresco.flipper.R$string
+ com.facebook.fresco.flipper.R$style
+ com.facebook.fresco.flipper.R$styleable
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList
+org/webkit/androidjsc/R.java
+ org.webkit.androidjsc.R
+androidx/slidingpanelayout/R.java
+ androidx.slidingpanelayout.R
+ androidx.slidingpanelayout.R$attr
+ androidx.slidingpanelayout.R$color
+ androidx.slidingpanelayout.R$dimen
+ androidx.slidingpanelayout.R$drawable
+ androidx.slidingpanelayout.R$id
+ androidx.slidingpanelayout.R$integer
+ androidx.slidingpanelayout.R$layout
+ androidx.slidingpanelayout.R$string
+ androidx.slidingpanelayout.R$style
+ androidx.slidingpanelayout.R$styleable
+com/wall/BuildConfig.java
+ com.wall.BuildConfig
+com/facebook/nativeimagetranscoder/R.java
+ com.facebook.nativeimagetranscoder.R
+ com.facebook.nativeimagetranscoder.R$attr
+ com.facebook.nativeimagetranscoder.R$color
+ com.facebook.nativeimagetranscoder.R$dimen
+ com.facebook.nativeimagetranscoder.R$drawable
+ com.facebook.nativeimagetranscoder.R$id
+ com.facebook.nativeimagetranscoder.R$integer
+ com.facebook.nativeimagetranscoder.R$layout
+ com.facebook.nativeimagetranscoder.R$string
+ com.facebook.nativeimagetranscoder.R$style
+ com.facebook.nativeimagetranscoder.R$styleable
+com/google/firebase/measurement/R.java
+ com.google.firebase.measurement.R
+androidx/viewpager/R.java
+ androidx.viewpager.R
+ androidx.viewpager.R$attr
+ androidx.viewpager.R$color
+ androidx.viewpager.R$dimen
+ androidx.viewpager.R$drawable
+ androidx.viewpager.R$id
+ androidx.viewpager.R$integer
+ androidx.viewpager.R$layout
+ androidx.viewpager.R$string
+ androidx.viewpager.R$style
+ androidx.viewpager.R$styleable
+com/google/android/gms/tasks/R.java
+ com.google.android.gms.tasks.R
+com/google/android/gms/ads_base/R.java
+ com.google.android.gms.ads_base.R

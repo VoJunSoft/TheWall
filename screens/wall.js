@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet,ScrollView,View,Text,ImageBackground,TouchableOpacity,FlatList,TextInput,Button,Image } from 'react-native';
+import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, TextInput, Button, Image } from 'react-native';
 import firestore from '@react-native-firebase/firestore';
 import { Divider, Icon} from 'react-native-elements';
 import HeaderMenu from '../components/header'
 import AllPosts from '../components/allPosts'
-//import Icon from 'react-native-vector-icons/FontAwesome';
+import * as Animatable from "react-native-animatable";
 
 const wall = ({navigation}) => {
   //TODO: Check if user not logged in go to login screen
@@ -28,14 +28,14 @@ const wall = ({navigation}) => {
       .get()
       .then(querySnapshot => {
         console.log('Total posts: ', querySnapshot.size);
-        setPosts([])
+        setPosts([]);
         querySnapshot.forEach(documentSnapshot => {
           console.log('post ID: ', documentSnapshot.id, documentSnapshot.data());
           //load posts from DB into posts state
           setPosts((prevState) => {
             return [
               {
-                id:documentSnapshot.id, 
+                id: documentSnapshot.id, 
                 userid: documentSnapshot.data().userid, 
                 body: documentSnapshot.data().body, 
                 date: documentSnapshot.data().date, 
@@ -46,12 +46,6 @@ const wall = ({navigation}) => {
             ]})
         });
       });
-      //Get userName. TODO get this from Auth instead of connecting to database
-      // firestore()
-      //   .collection('users')
-      //   .doc(userID)
-      //   .get()
-      //   .then(documentSnapshot => setUserName(documentSnapshot.data()))
       // Stop listening for updates when no longer required
       //return () => subscriber();
   }, []);
@@ -97,26 +91,38 @@ const wall = ({navigation}) => {
 
     setInput("")
     setInputVisibility(false)
+    setWallTitle('Show My Wall')
   }
 
-  const [inputVisibiliy, setInputVisibility] = useState(false)
+  const [wallTitle, setWallTitle] = useState("Hide My Wall")
+  const [inputVisibiliy, setInputVisibility] = useState(true)
   const handleInput = () =>{
     setInputVisibility(!inputVisibiliy)
+    if(wallTitle === 'Show My Wall')
+      setWallTitle('Hide My Wall')
+    else
+      setWallTitle('Show My Wall')
+
     setErrMsg('')
   }
 
   //default background image
-  const [bgStyle, setBgStyle] = useState(require('../assets/imgs/wall00.png'))
+  const [bgStyle, setBgStyle] = useState(require('../assets/imgs/wall111.png'))
   
   return(
     <View style={styles.container}>
         <Button 
           onPress={handleInput}
-          title="Post On The Wall"
+          title={wallTitle}
           color="#42435b"
         />
         {inputVisibiliy ? 
-        <View style={styles.inputBox}>
+         <Animatable.View 
+          style={styles.inputBox} 
+          easing="ease-in-out-quad"
+          animation="slideInDown" 
+          iterationCount={1} 
+          direction="alternate">
         <ImageBackground source={bgStyle} style={styles.image}>
          <TextInput
             value={input}
@@ -135,8 +141,8 @@ const wall = ({navigation}) => {
           <Text style={styles.err}>{errMsg}</Text> 
 
           <TouchableOpacity 
-            onPress={() => setBgStyle(require('../assets/imgs/wall00.png'))}>
-            <Image style={styles.logo} source={require("../assets/imgs/wall00.png")} />
+            onPress={() => setBgStyle(require('../assets/imgs/wall111.png'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall111.png")} />
           </TouchableOpacity>
 
           {/* <TouchableOpacity onPress={() => setBgStyle(require('../assets/imgs/wall01.jpg'))}>
@@ -144,13 +150,13 @@ const wall = ({navigation}) => {
           </TouchableOpacity> */}
 
           <TouchableOpacity 
-            onPress={() => setBgStyle(require('../assets/imgs/wall02.jpg'))}>
-            <Image style={styles.logo} source={require("../assets/imgs/wall02.jpg")} />
+            onPress={() => setBgStyle(require('../assets/imgs/wall03.jpg'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall03.jpg")} />
           </TouchableOpacity>
 
           <TouchableOpacity 
-            onPress={() => setBgStyle(require('../assets/imgs/wall04.jpg'))}>
-            <Image style={styles.logo} source={require("../assets/imgs/wall04.jpg")} />             
+            onPress={() => setBgStyle(require('../assets/imgs/wall333.jpg'))}>
+            <Image style={styles.logo} source={require("../assets/imgs/wall333.jpg")} />             
           </TouchableOpacity>
 
             <Icon
@@ -162,7 +168,8 @@ const wall = ({navigation}) => {
               color='#42435b'
               onPress={handleSubmit}/>
               </View>
-         </View> : null
+         </Animatable.View>
+         : null
         }
         
         {/* TODO: possible loading command */}
@@ -186,6 +193,7 @@ const styles = StyleSheet.create({
       margin: 7
     },
     postInput: {
+      textAlignVertical:'top',
       fontSize: 24,
       borderColor:'#42435b',
       borderWidth:1,

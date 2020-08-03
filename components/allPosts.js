@@ -76,10 +76,10 @@ const allPosts = (props) => {
 
 const styles = StyleSheet.create({
     image: {
-      flex: 1,
-      resizeMode:'cover',
+      flex: 0,
+      resizeMode:'repeat',
       justifyContent: "center",
-      borderRadius: 15
+      borderRadius: 1
     },
     postsHeader:{
       flex:1,
@@ -103,15 +103,16 @@ const styles = StyleSheet.create({
       fontWeight:'bold',
       color:'black',
       textAlign: 'left',
-      textAlignVertical: 'center'
+      textAlignVertical: 'center',
+      
     },
     body:{
       fontSize: 28,
       color:'black',
-      padding: 4,
       paddingLeft: 22,
       textAlign: 'left',
-      fontFamily: "Good Morning"
+      fontFamily: "Outrun future",
+      paddingTop: 0,
     },
     date:{
       fontSize: 15,
@@ -132,14 +133,13 @@ const styles = StyleSheet.create({
       width:100
     },
     posts: {
-      flex:1,
       fontSize: 24,
       color:'green',
       padding: 4,
       margin: 7,
       textAlign: 'center',
       backgroundColor:'lightgray',
-      borderRadius: 5
+      borderRadius: 15
     }
   });
 export default allPosts;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -9,35 +9,53 @@ import {
 } from 'react-native';
 import HeaderMenu from '../components/header'
 import { Button } from 'react-native-elements';
+import AllPosts from '../components/allPosts'
+import admob, { MaxAdContentRating, BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
+//const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-4556757412228601/4456863648';
 
+const profile = (props, {navigation}) => {
+  // // useEffect(()=>{ 
+    admob()
+    .setRequestConfiguration({
+      maxAdContentRating: MaxAdContentRating.PG,
+      tagForChildDirectedTreatment: true,
+      tagForUnderAgeOfConsent: true,
+    })
+    .then(() => {
+      // Request config successfully set!
+    });
+  // // },[])
 
-const profile = ({navigation}) => {
   const handleDelete = (id) =>{
   
   }
 
   return(
-    <View>
-            <Text style={styles.title}>profile</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>profile</Text>
 
-            {/* This will display all posts in your state with the delete Button
-            TODO complete handleDelete using posts.filter
-            <AllPosts posts={posts} deleteButton={true} handleDelete={handleDelete}/> */}
+   
+      <BannerAd
+          unitId={TestIds.BANNER}
+          size={BannerAdSize.FULL_BANNER}
+          requestOptions={{
+            requestNonPersonalizedAdsOnly: true,
+          }}
+        />
     </View>
 
   )}
 
 const styles = StyleSheet.create({
+  container:{
+    flex:1,
+    padding: 10,
+    backgroundColor: "#d3d3d3",
+  },
   title: {
     flex:0,
-    flexDirection: "row",
-    justifyContent: 'space-between',
     fontFamily:'Cheeky Bite Shine - AND',
     fontSize: 37,
-    marginTop:70,
-    fontWeight: '100',
-    padding: 7,
-    textAlign: 'center',
   }
   });
 export default profile;

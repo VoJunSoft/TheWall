@@ -13,6 +13,7 @@ import SignIn from './screens/signIn'
 import Wall from './screens/wall'
 import Settings from './screens/settings'
 import Profile from './screens/profile'
+import Splash from './screens/splash'
 import HeaderMenu from './components/header'
 
 const Stack = createStackNavigator();
@@ -50,6 +51,10 @@ const App = () => {
   return (  
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Wall">
+      <Stack.Screen 
+            name="Splash" 
+            component={Splash} 
+            options={{ headerShown: false }}/>
         <Stack.Screen 
             name="SignIn" 
             component={SignIn} 
