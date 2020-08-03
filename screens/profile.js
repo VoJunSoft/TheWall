@@ -14,7 +14,7 @@ import admob, { MaxAdContentRating, BannerAd, BannerAdSize, TestIds } from '@rea
 //const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-4556757412228601/4456863648';
 
 const profile = (props, {navigation}) => {
-  // // useEffect(()=>{ 
+  //Optional code
     admob()
     .setRequestConfiguration({
       maxAdContentRating: MaxAdContentRating.PG,
@@ -23,8 +23,7 @@ const profile = (props, {navigation}) => {
     })
     .then(() => {
       // Request config successfully set!
-    });
-  // // },[])
+    })
 
   const handleDelete = (id) =>{
   
