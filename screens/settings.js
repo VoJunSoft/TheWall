@@ -1,22 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
   ScrollView,
   View,
   Text,
-  StatusBar,
-  ImageBackground,
-  FlatList,
-  TextInput,
-  Button,
-  Image
+  TouchableOpacity,
+  Image,
+  BackHandler
 } from 'react-native';
-import { Divider, Icon} from 'react-native-elements';
-import HeaderMenu from '../components/header'
-//import Icon from 'react-native-vector-icons/FontAwesome';
+import auth from '@react-native-firebase/auth'
 
 const settings = () => {
+  const handleSignOut = () => {
+    auth().signOut()
+    BackHandler.exitApp();
+    
+  }
 
   return(
    
@@ -28,8 +28,10 @@ const settings = () => {
         “...it’s just another one of those things I don’t understand: everyone impresses upon you how unique you are, encouraging you to cultivate your individuality while at the same time trying to squish you and everyone else into the same ridiculous mould. It’s an artist’s right to rebel against the world’s stupidity.”
         ― E.A. Bucchianeri, Brushstrokes of a Gadfly,
         </Text>
-    <Text style={styles.title}>Log Out</Text>
-    <Text style={styles.body}>Leave us in peace!</Text>
+        <TouchableOpacity onPress={() => handleSignOut()}>
+        <Text style={styles.title}>Log Out</Text>
+        </TouchableOpacity>
+        <Text style={styles.body}>Leave us in peace!</Text>
     </ScrollView>
     </View>
   )
@@ -57,6 +59,7 @@ const styles = StyleSheet.create({
     fontWeight: '100',
     padding: 7,
     textAlign: 'left',
+    color:'red'
   },
   body:{
     marginLeft:20,

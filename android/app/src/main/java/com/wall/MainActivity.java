@@ -1,4 +1,4 @@
-package com.wall;
+package com.junglesoft.wall;
 
 import com.facebook.react.ReactActivity;
 

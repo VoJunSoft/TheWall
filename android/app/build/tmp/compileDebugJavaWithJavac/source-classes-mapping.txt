@@ -72,7 +72,7 @@ com/facebook/drawee/backends/pipeline/R.java
 androidx/arch/core/R.java
  androidx.arch.core.R
 com/wall/MainActivity.java
- com.wall.MainActivity
+ com.junglesoft.wall.MainActivity
 androidx/fragment/R.java
  androidx.fragment.R
  androidx.fragment.R$anim
@@ -158,6 +158,8 @@ com/facebook/flipper/plugins/fresco/R.java
  com.facebook.flipper.plugins.fresco.R$string
  com.facebook.flipper.plugins.fresco.R$style
  com.facebook.flipper.plugins.fresco.R$styleable
+com/junglesoft/wall/BuildConfig.java
+ com.junglesoft.wall.BuildConfig
 androidx/interpolator/R.java
  androidx.interpolator.R
 androidx/core/R.java
@@ -265,10 +267,10 @@ androidx/appcompat/R.java
  androidx.appcompat.R$style
  androidx.appcompat.R$styleable
 com/wall/ReactNativeFlipper.java
- com.wall.ReactNativeFlipper
- com.wall.ReactNativeFlipper$1
- com.wall.ReactNativeFlipper$2
- com.wall.ReactNativeFlipper$2$1
+ com.junglesoft.wall.ReactNativeFlipper
+ com.junglesoft.wall.ReactNativeFlipper$1
+ com.junglesoft.wall.ReactNativeFlipper$2
+ com.junglesoft.wall.ReactNativeFlipper$2$1
 com/google/firebase/firebase_ads/R.java
  com.google.firebase.firebase_ads.R
 androidx/legacy/coreui/R.java
@@ -368,6 +370,25 @@ com/google/android/gms/ads/R.java
  com.google.android.gms.ads.R$attr
  com.google.android.gms.ads.R$style
  com.google.android.gms.ads.R$styleable
+com/junglesoft/wall/R.java
+ com.junglesoft.wall.R
+ com.junglesoft.wall.R$anim
+ com.junglesoft.wall.R$animator
+ com.junglesoft.wall.R$attr
+ com.junglesoft.wall.R$bool
+ com.junglesoft.wall.R$color
+ com.junglesoft.wall.R$dimen
+ com.junglesoft.wall.R$drawable
+ com.junglesoft.wall.R$id
+ com.junglesoft.wall.R$integer
+ com.junglesoft.wall.R$interpolator
+ com.junglesoft.wall.R$layout
+ com.junglesoft.wall.R$mipmap
+ com.junglesoft.wall.R$plurals
+ com.junglesoft.wall.R$string
+ com.junglesoft.wall.R$style
+ com.junglesoft.wall.R$styleable
+ com.junglesoft.wall.R$xml
 com/google/firebase/iid/internal/R.java
  com.google.firebase.iid.internal.R
 androidx/localbroadcastmanager/R.java
@@ -457,8 +478,8 @@ androidx/viewpager2/R.java
 com/google/android/gms/ads_identifier/R.java
  com.google.android.gms.ads_identifier.R
 com/wall/MainApplication.java
- com.wall.MainApplication
- com.wall.MainApplication$1
+ com.junglesoft.wall.MainApplication
+ com.junglesoft.wall.MainApplication$1
 com/facebook/fbcore/R.java
  com.facebook.fbcore.R
 androidx/vectordrawable/R.java
@@ -717,29 +738,25 @@ com/facebook/imagepipeline/nativecode/R.java
  com.facebook.imagepipeline.nativecode.R$styleable
 androidx/lifecycle/livedata/R.java
  androidx.lifecycle.livedata.R
+com/reactnativecommunity/asyncstorage/R.java
+ com.reactnativecommunity.asyncstorage.R
+ com.reactnativecommunity.asyncstorage.R$anim
+ com.reactnativecommunity.asyncstorage.R$attr
+ com.reactnativecommunity.asyncstorage.R$bool
+ com.reactnativecommunity.asyncstorage.R$color
+ com.reactnativecommunity.asyncstorage.R$dimen
+ com.reactnativecommunity.asyncstorage.R$drawable
+ com.reactnativecommunity.asyncstorage.R$id
+ com.reactnativecommunity.asyncstorage.R$integer
+ com.reactnativecommunity.asyncstorage.R$layout
+ com.reactnativecommunity.asyncstorage.R$string
+ com.reactnativecommunity.asyncstorage.R$style
+ com.reactnativecommunity.asyncstorage.R$styleable
+ com.reactnativecommunity.asyncstorage.R$xml
 com/google/firebase/measurement_impl/R.java
  com.google.firebase.measurement_impl.R
 androidx/lifecycle/R.java
  androidx.lifecycle.R
-com/wall/R.java
- com.wall.R
- com.wall.R$anim
- com.wall.R$animator
- com.wall.R$attr
- com.wall.R$bool
- com.wall.R$color
- com.wall.R$dimen
- com.wall.R$drawable
- com.wall.R$id
- com.wall.R$integer
- com.wall.R$interpolator
- com.wall.R$layout
- com.wall.R$mipmap
- com.wall.R$plurals
- com.wall.R$string
- com.wall.R$style
- com.wall.R$styleable
- com.wall.R$xml
 androidx/documentfile/R.java
  androidx.documentfile.R
 com/swmansion/reanimated/R.java
@@ -815,8 +832,6 @@ androidx/slidingpanelayout/R.java
  androidx.slidingpanelayout.R$string
  androidx.slidingpanelayout.R$style
  androidx.slidingpanelayout.R$styleable
-com/wall/BuildConfig.java
- com.wall.BuildConfig
 com/facebook/nativeimagetranscoder/R.java
  com.facebook.nativeimagetranscoder.R
  com.facebook.nativeimagetranscoder.R$attr

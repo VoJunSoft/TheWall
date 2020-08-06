@@ -353,11 +353,11 @@ com/google/j2objc/annotations/RetainedWith.class
 com/google/j2objc/annotations/Weak.class
 com/google/j2objc/annotations/WeakOuter.class
 com/google/protobuf/ExperimentalApi.class
+com/junglesoft/wall/BuildConfig.class
+com/junglesoft/wall/MainApplication$1.class
+com/junglesoft/wall/MainApplication.class
 com/swmansion/reanimated/MapUtils.class
 com/swmansion/rnscreens/ScreenStackHeaderConfigViewManager.class
-com/wall/BuildConfig.class
-com/wall/MainApplication$1.class
-com/wall/MainApplication.class
 io/grpc/CallOptions.class
 io/grpc/EquivalentAddressGroup$Attr.class
 io/grpc/ExperimentalApi.class

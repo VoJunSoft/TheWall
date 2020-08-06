@@ -1,1 +1,1 @@
-com.wall
+com.junglesoft.wall

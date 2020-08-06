@@ -4,7 +4,7 @@
     <string name="firebase_database_url" translatable="false">https://the-wall-e39d5.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">295081312494</string>
     <string name="google_api_key" translatable="false">AIzaSyCEQqIt6XktyNUVD7pYYz1fBtGIwEnHBMw</string>
-    <string name="google_app_id" translatable="false">1:295081312494:android:28006d4954b323722133ff</string>
+    <string name="google_app_id" translatable="false">1:295081312494:android:4510359b51ee40ae2133ff</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCEQqIt6XktyNUVD7pYYz1fBtGIwEnHBMw</string>
     <string name="google_storage_bucket" translatable="false">the-wall-e39d5.appspot.com</string>
     <string name="project_id" translatable="false">the-wall-e39d5</string>

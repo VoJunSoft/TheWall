@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, TextInput, Button, Image } from 'react-native';
 import firestore from '@react-native-firebase/firestore';
-import { Divider, Icon} from 'react-native-elements';
-import HeaderMenu from '../components/header'
+import {  Icon} from 'react-native-elements';
 import AllPosts from '../components/allPosts'
 import * as Animatable from "react-native-animatable";
+import AsyncStorage from '@react-native-community/async-storage';
 
 const wall = ({navigation}) => {
   //TODO: Check if user not logged in go to login screen
@@ -14,19 +14,22 @@ const wall = ({navigation}) => {
   //initialize empty posts state
   const [posts, setPosts] = useState([])
 
-  //get user's name and ID from Auth-logIN
-  const [userName, setUserName] = useState('Khaled')
   const [userID, setUserID] = useState('IitAXPGy0NoBBZrtER68')
+  const [userName, setUserName] = useState('Khaled')
+  AsyncStorage.getItem("userData").then(userData => {
+    //We need to parse the object back to read it 
+    setUserID(JSON.parse(userData).uid)
+    setUserName(JSON.parse(userData).displayName)
+  })
+  
+  
 
   //TODO: change useEffect onRefresh
   useEffect(() => {
-    //set default png
-   
-   // const subscriber = firestore()
+  
     firestore()
       .collection('posts')
-      .get()
-      .then(querySnapshot => {
+      .onSnapshot(querySnapshot => {
         console.log('Total posts: ', querySnapshot.size);
         setPosts([]);
         querySnapshot.forEach(documentSnapshot => {
@@ -35,19 +38,18 @@ const wall = ({navigation}) => {
           setPosts((prevState) => {
             return [
               {
-                id: documentSnapshot.id, 
+                postID: documentSnapshot.id, 
+                //we can replace the objects below with documentSnapshot.data(),
                 userid: documentSnapshot.data().userid, 
                 body: documentSnapshot.data().body, 
                 date: documentSnapshot.data().date, 
                 name: documentSnapshot.data().name,
-                //postBg: require('../assets/imgs/wall00.png')
                 postBg: documentSnapshot.data().postBg
               },  ...prevState
             ]})
         });
       });
-      // Stop listening for updates when no longer required
-      //return () => subscriber();
+      
   }, []);
 
 
@@ -62,18 +64,17 @@ const wall = ({navigation}) => {
     //   setBgStyle(require('../assets/imgs/wall00.png'))
 
     //Add Input to posts state
-    //TO DO: Automated id
-    setPosts((prevState) => {
-    return [
-      {
-        id:'6', 
-        userid: userID, 
-        body: input, 
-        date: Date(), 
-        name:userName,
-        postBg: bgStyle
-    }, ...prevState
-    ]})
+    // setPosts((prevState) => {
+    // return [
+    //   {
+    //     id:'6', 
+    //     userid: userID, 
+    //     body: input, 
+    //     date: Date(), 
+    //     name:userName,
+    //     postBg: bgStyle
+    // }, ...prevState
+    // ]})
 
     //add post to database
     firestore()
@@ -90,6 +91,7 @@ const wall = ({navigation}) => {
       });
 
     setInput("")
+    //hide post wall when users submits his/her post
     setInputVisibility(false)
     setWallTitle('Show My Wall')
   }

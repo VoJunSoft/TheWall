@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, ScrollView, View, Text, StatusBar, ImageBackground, FlatList } from 'react-native';
+import { StyleSheet, View, Text, ImageBackground, FlatList } from 'react-native';
 
-import { Button, ThemeProvider, Header, Icon } from 'react-native-elements';
+import {  Icon } from 'react-native-elements';
 
 const allPosts = (props) => {
   //Date format
@@ -32,10 +32,9 @@ const allPosts = (props) => {
   }
   
   return(
-    //TODO: fix nested flastList issue/contradiction with scrollView
     <FlatList 
     data={props.posts}
-    keyExtractor={item => item.id}
+    keyExtractor={item => item.postID}
     renderItem={ ({item}) => (
       <View style={styles.posts}>
       <ImageBackground source={item.postBg} style={styles.image}>
@@ -62,7 +61,7 @@ const allPosts = (props) => {
           type='font-awesome'
           size={10}
           color='red'
-          onPress={() => handleDelete(item.id)} /> : null
+          onPress={() => props.handleDelete(item.postID)} /> : null
         }
       </View>
       </ImageBackground>

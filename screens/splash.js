@@ -23,7 +23,7 @@ const splash = () => {
         onAnimationEnd={jumpTo}
         easing="ease"
         animation="slideInDown" 
-        iterationCount={6}
+        iterationCount={3}
         direction="alternate-reverse">
         <Image style={styles.logo} source={require("../assets/imgs/wall3.png")} />
         

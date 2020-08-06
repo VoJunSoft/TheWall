@@ -1,4 +1,4 @@
 # Referenced at /Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:19
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 # Referenced at /Users/junglesoft/Downloads/TheWall/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:19
--keep class com.wall.MainApplication { <init>(); }
+-keep class com.junglesoft.wall.MainApplication { <init>(); }

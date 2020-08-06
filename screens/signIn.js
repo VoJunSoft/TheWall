@@ -7,23 +7,15 @@ import {
   TextInput,
   TouchableOpacity,
   Button,
-
 } from "react-native";
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from "react-native/Libraries/NewAppScreen";
+
 
 import IconsFontAwesome from 'react-native-vector-icons/FontAwesome'
-
 import IconsAntDesign from 'react-native-vector-icons/AntDesign'
-
 import auth from '@react-native-firebase/auth'
-
 import IntlPhoneInput from 'react-native-intl-phone-input';
+import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-community/async-storage';
 
 
 const signIn = () => {
@@ -33,8 +25,7 @@ const signIn = () => {
   const [confirm, setConfirm] = useState(null)
   const [code, setCode] = useState('');
   const [initializing, setInitializing] = useState(true);
-  const [user, setUser] = useState();
-
+  const [user, setUser] = useState({});
 
   // Handle user state changes
 
@@ -99,23 +90,49 @@ const signIn = () => {
 
   }
 
-  const handleSignOut = () => {
+  
 
-    auth().signOut()
-    setUser(null)
 
+  //Check if user to store his ID
+
+
+  const saveUser = async (user) => {
+    console.log(user)
+    try {
+      //We need to stringify the object to store it 
+      await AsyncStorage.setItem("userData", JSON.stringify(user));
+    } catch (err) {
+      alert('Failed to save the data to the storage')
+    }
   }
 
+  useEffect(() => {
+
+    if (user)
+
+      saveUser(user)
+
+  }, [user])
+
+
+
+
+  // initializing return null
 
   if (initializing) {
 
     return null
 
+    //Otherwise return the whole page
+
   } else {
 
     return (
       <View style={styles.screen}>
-        {user ? (
+        <View style={styles.imgContainer}>
+          <Image style={styles.logo} source={require("../assets/imgs/wall.png")} />
+        </View>
+        {/* {user ? (
           <View style={styles.signOutButtonTopContainer}>
             <TouchableOpacity style={styles.signOutButtonContainer} onPress={handleSignOut}>
 
@@ -123,86 +140,73 @@ const signIn = () => {
 
             </TouchableOpacity>
           </View>
-        ) : (
-            <View style={styles.imgContainer}>
-              <Image style={styles.logo} source={require("../assets/imgs/wall.png")} />
-            </View>
-          )}
+        ) : ( */}
 
-        {user ? (
-          <View>
-            <Text>Welcome {user.phoneNumber} </Text>
+
+        {confirm ? (
+
+          //Confirm code view
+
+          <View style={styles.confirmCodeView}>
+            <TextInput
+              style={styles.codeInput}
+              selectionColor="#e89328"
+              underlineColorAndroid={
+                isFocused ? "#e89328" : "gray"
+              }
+              placeholder="Please enter verification code"
+              keyboardType="phone-pad"
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+              onChangeText={text => setCode(text)}
+              value={code}
+            />
+
+            <TouchableOpacity style={styles.codeButtonContainer} onPress={handleConfirmCode}>
+
+              <Text style={styles.confirmButton}>Confirm Code</Text>
+
+
+            </TouchableOpacity>
+
+
+
           </View>
 
         ) : (
+            //Phone signin view
 
             <>
-
-              {confirm ? (
-
-                //Confirm code view
-
-                <View style={styles.confirmCodeView}>
-                  <TextInput
-                    style={styles.codeInput}
-                    selectionColor="#e89328"
-                    underlineColorAndroid={
-                      isFocused ? "#e89328" : "gray"
-                    }
-                    placeholder="Please enter verification code"
-                    keyboardType="phone-pad"
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onChangeText={text => setCode(text)}
-                    value={code}
+              <View style={styles.phoneInputContainer}>
+                <IconsFontAwesome name="mobile-phone" size={35} color="gray" style={styles.signInIcon} />
+                <View style={styles.intlPhoneSafeViewContainer}>
+                  <IntlPhoneInput
+                    containerStyle={styles.intlPhoneContainer}
+                    dialCodeTextStyle={styles.dialCode}
+                    defaultCountry="IL"
+                    lang="EN"
+                    onChangeText={handleContryCode}
+                    filterText="Please choose your country"
                   />
-
-                  <TouchableOpacity style={styles.codeButtonContainer} onPress={handleConfirmCode}>
-
-                    <Text style={styles.confirmButton}>Confirm Code</Text>
-
-
-                  </TouchableOpacity>
-
-
-
                 </View>
+              </View>
 
-              ) : (
-                  //Phone signin view
+              <View style={styles.signInTopContainer}>
 
-                  <>
-                    <View style={styles.phoneInputContainer}>
-                      <IconsFontAwesome name="mobile-phone" size={35} color="gray" style={styles.signInIcon} />
-                      <View style={styles.intlPhoneSafeViewContainer}>
-                        <IntlPhoneInput
-                          containerStyle={styles.intlPhoneContainer}
-                          dialCodeTextStyle={styles.dialCode}
-                          defaultCountry="IL"
-                          lang="EN"
-                          onChangeText={handleContryCode}
-                          filterText="Please choose your country"
-                        />
-                      </View>
-                    </View>
+                <TouchableOpacity style={styles.signInButtonContainer} onPress={handleSignIn}>
 
-                    <View style={styles.signInTopContainer}>
-
-                      <TouchableOpacity style={styles.signInButtonContainer} onPress={handleSignIn}>
-
-                        <Text style={styles.signInButton}>Sign in</Text>
+                  <Text style={styles.signInButton}>Sign in</Text>
 
 
-                      </TouchableOpacity>
-                    </View>
+                </TouchableOpacity>
+              </View>
 
 
-                  </>
-
-
-                )}
             </>
+
+
           )}
+
       </View>
 
     )
@@ -210,12 +214,11 @@ const signIn = () => {
   };
 }
 
-
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: "#d3d3d3",
-    paddingTop:70
+    paddingTop: 50
   },
   imgContainer: {
     justifyContent: "center",
@@ -224,8 +227,8 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 180,
-    height: 180,
+    width: 250,
+    height: 250,
     borderRadius: 50,
   },
 
